@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>The Intelligent Asset Allocator বাংলা সারাংশ | InvestBangla</title>
+<meta name="description" content="The Intelligent Asset Allocator বইটির সহজ বাংলা শিক্ষামূলক সারাংশ। Asset allocation, diversification, risk, bonds, stocks, rebalancing এবং long-term investing সম্পর্কে জানুন।">
+<meta name="keywords" content="The Intelligent Asset Allocator Bengali, William Bernstein বাংলা, asset allocation বাংলা, diversification, portfolio, investing">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mahatodeepak.github.io/InvestBangla/intelligent-asset-allocator.html">
+
+<meta property="og:title" content="The Intelligent Asset Allocator — বাংলা সারাংশ">
+<meta property="og:description" content="Asset allocation ও portfolio construction-এর গুরুত্বপূর্ণ ধারণাগুলোর সহজ বাংলা শিক্ষামূলক ব্যাখ্যা।">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://mahatodeepak.github.io/InvestBangla/intelligent-asset-allocator.html">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"The Intelligent Asset Allocator বাংলা সারাংশ",
+ "description":"The Intelligent Asset Allocator বইটির original Bengali educational summary.",
+ "author":{"@type":"Organization","name":"InvestBangla"},
+ "publisher":{"@type":"Organization","name":"InvestBangla"},
+ "mainEntityOfPage":"https://mahatodeepak.github.io/InvestBangla/intelligent-asset-allocator.html",
+ "inLanguage":"bn"
+}
+</script>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans Bengali",sans-serif;
+ background:#f4f7fb;
+ color:#172033;
+ line-height:1.85;
+ transition:.3s
+}
+body.dark{background:#0f141c;color:#e8edf5}
+a{text-decoration:none;color:inherit}
+
+.progress{
+ position:fixed;
+ top:0;left:0;width:0;height:4px;
+ background:linear-gradient(90deg,#06b6d4,#2563eb);
+ z-index:9999
+}
+
+header{
+ position:sticky;
+ top:0;
+ z-index:1000;
+ background:rgba(15,23,42,.95);
+ backdrop-filter:blur(14px);
+ color:white;
+ box-shadow:0 5px 25px rgba(0,0,0,.16)
+}
+
+.nav{
+ max-width:1100px;
+ margin:auto;
+ padding:12px 18px;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:12px
+}
+
+.logo{font-size:21px;font-weight:800}
+.logo span{color:#22d3ee}
+
+.controls{
+ display:flex;
+ gap:6px;
+ flex-wrap:wrap
+}
+
+button{
+ border:0;
+ border-radius:9px;
+ padding:8px 11px;
+ cursor:pointer;
+ font-size:14px
+}
+
+.tool{
+ background:#26354b;
+ color:white
+}
+
+.tool:hover{background:#374a66}
+
+.hero{
+ color:white;
+ background:
+ radial-gradient(circle at 12% 18%,rgba(6,182,212,.27),transparent 30%),
+ radial-gradient(circle at 88% 12%,rgba(37,99,235,.27),transparent 32%),
+ linear-gradient(135deg,#0f172a,#172554 55%,#0f172a)
+}
+
+.hero-inner{
+ max-width:1100px;
+ margin:auto;
+ padding:65px 20px 58px
+}
+
+.badge{
+ display:inline-block;
+ padding:6px 12px;
+ border-radius:30px;
+ background:rgba(255,255,255,.1);
+ border:1px solid rgba(255,255,255,.2);
+ font-size:13px
+}
+
+h1{
+ font-size:clamp(34px,7vw,64px);
+ line-height:1.15;
+ margin:20px 0 12px
+}
+
+.hero p{
+ max-width:780px;
+ color:#cbd5e1;
+ font-size:17px
+}
+
+.hero-buttons{
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ margin-top:25px
+}
+
+.cta{
+ display:inline-block;
+ border:0;
+ background:#22d3ee;
+ color:#082f49;
+ font-weight:800;
+ padding:11px 17px;
+ border-radius:10px;
+ cursor:pointer
+}
+
+.cta.secondary{
+ background:rgba(255,255,255,.1);
+ color:white
+}
+
+.stats{
+ max-width:1100px;
+ margin:-28px auto 30px;
+ padding:0 20px;
+ position:relative
+}
+
+.stat-box{
+ background:white;
+ border-radius:18px;
+ padding:20px;
+ box-shadow:0 12px 35px rgba(15,23,42,.1);
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:15px
+}
+
+body.dark .stat-box,
+body.dark .card,
+body.dark .toolbox,
+body.dark .faq-item{
+ background:#181e28;
+ color:#e8edf5
+}
+
+.stat{text-align:center}
+.stat strong{
+ display:block;
+ font-size:24px;
+ color:#0891b2
+}
+.stat span{
+ font-size:13px;
+ color:#6b7280
+}
+
+.container{
+ max-width:900px;
+ margin:auto;
+ padding:15px 20px 60px
+}
+
+.toolbox{
+ position:sticky;
+ top:65px;
+ z-index:50;
+ background:white;
+ border-radius:14px;
+ padding:12px;
+ margin-bottom:28px;
+ box-shadow:0 7px 25px rgba(0,0,0,.08);
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap
+}
+
+.search{
+ flex:1;
+ min-width:180px;
+ padding:10px 12px;
+ border:1px solid #d1d5db;
+ border-radius:9px;
+ background:transparent;
+ color:inherit
+}
+
+.card{
+ background:white;
+ border-radius:18px;
+ padding:27px;
+ margin:22px 0;
+ box-shadow:0 7px 25px rgba(15,23,42,.06)
+}
+
+.card h2{
+ margin-top:0;
+ font-size:27px
+}
+
+.card h3{font-size:20px}
+
+.highlight{
+ border-left:5px solid #06b6d4;
+ background:#ecfeff;
+ padding:16px 18px;
+ border-radius:10px;
+ margin:18px 0
+}
+
+body.dark .highlight{background:#102a30}
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:15px
+}
+
+.mini{
+ padding:18px;
+ border:1px solid #e5e7eb;
+ border-radius:13px
+}
+
+body.dark .mini{border-color:#303846}
+
+.mini strong{
+ display:block;
+ margin-bottom:5px;
+ color:#0891b2
+}
+
+.toc a{
+ display:block;
+ padding:7px 0;
+ color:#0e7490
+}
+
+ul{padding-left:22px}
+
+input[type=number],
+select{
+ width:100%;
+ padding:11px;
+ border:1px solid #d1d5db;
+ border-radius:9px;
+ background:transparent;
+ color:inherit;
+ margin-bottom:10px
+}
+
+.calc-result{
+ margin-top:14px;
+ padding:15px;
+ border-radius:10px;
+ background:#ecfeff;
+ font-weight:700
+}
+
+body.dark .calc-result{background:#102a30}
+
+.faq-item{
+ background:white;
+ border-radius:12px;
+ margin:10px 0;
+ overflow:hidden
+}
+
+.faq-q{
+ width:100%;
+ text-align:left;
+ background:transparent;
+ padding:16px;
+ font-weight:700;
+ color:inherit
+}
+
+.faq-a{
+ display:none;
+ padding:0 16px 16px
+}
+
+.faq-item.open .faq-a{display:block}
+
+.nav-buttons{
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
+ margin-top:30px
+}
+
+.nav-buttons a{
+ flex:1;
+ padding:14px;
+ background:#111827;
+ color:white;
+ border-radius:11px;
+ text-align:center
+}
+
+.nav-buttons a:last-child{background:#0891b2}
+
+.disclaimer{
+ font-size:13px;
+ color:#6b7280;
+ border-top:1px solid #ddd;
+ margin-top:30px;
+ padding-top:20px
+}
+
+footer{
+ background:#111827;
+ color:#cbd5e1;
+ text-align:center;
+ padding:35px 20px
+}
+
+@media(max-width:650px){
+ .stat-box{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
+ .toolbox{top:57px}
+ .card{padding:21px}
+ .hero-inner{padding:48px 20px}
+ .nav-buttons{flex-direction:column}
+}
+
+@media print{
+ header,.toolbox,.progress,.hero-buttons,.nav-buttons,footer{
+  display:none!important
+ }
+ body{background:white;color:black}
+ .card{
+  box-shadow:none;
+  break-inside:avoid
+ }
+}
+</style>
+</head>
+
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header>
+ <div class="nav">
+  <a class="logo" href="index.html">Invest<span>Bangla</span></a>
+
+  <div class="controls">
+   <button class="tool" onclick="toggleTheme()">☾</button>
+   <button class="tool" onclick="changeFont(-1)">A−</button>
+   <button class="tool" onclick="changeFont(1)">A+</button>
+  </div>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="hero-inner">
+
+  <span class="badge">📘 Book 14 • Asset Allocation</span>
+
+  <h1>The Intelligent Asset Allocator</h1>
+
+  <p>
+   William Bernstein-এর বই থেকে asset allocation,
+   diversification, risk management, rebalancing এবং
+   long-term portfolio construction-এর গুরুত্বপূর্ণ ধারণাগুলোর
+   সহজ, original ও শিক্ষামূলক বাংলা ব্যাখ্যা।
+  </p>
+
+  <div class="hero-buttons">
+   <a class="cta" href="#summary">📖 পড়া শুরু করুন</a>
+   <button class="cta secondary" onclick="sharePage()">↗ Share</button>
+  </div>
+
+ </div>
+</section>
+
+<div class="stats">
+ <div class="stat-box">
+
+  <div class="stat">
+   <strong>Risk</strong>
+   <span>ঝুঁকি বোঝা</span>
+  </div>
+
+  <div class="stat">
+   <strong>Allocation</strong>
+   <span>সম্পদ ভাগ করা</span>
+  </div>
+
+  <div class="stat">
+   <strong>Rebalance</strong>
+   <span>Portfolio সামঞ্জস্য করা</span>
+  </div>
+
+ </div>
+</div>
+
+<main class="container">
+
+<div class="toolbox">
+ <input
+  class="search"
+  id="search"
+  placeholder="এই পেজে খুঁজুন..."
+  oninput="searchText()">
+
+ <button class="tool" onclick="copyPage()">📋 Copy</button>
+ <button class="tool" onclick="savePage()">🔖 Save</button>
+ <button class="tool" onclick="window.print()">🖨 Print</button>
+</div>
+
+<section class="card toc">
+
+ <h2>📑 সূচিপত্র</h2>
+
+ <a href="#summary">1. মূল ধারণা</a>
+ <a href="#allocation">2. Asset Allocation</a>
+ <a href="#risk">3. Risk বোঝা</a>
+ <a href="#diversification">4. Diversification</a>
+ <a href="#stocks">5. Stocks</a>
+ <a href="#bonds">6. Bonds</a>
+ <a href="#rebalance">7. Rebalancing</a>
+ <a href="#discipline">8. Investor Discipline</a>
+ <a href="#check">9. Portfolio Self-Check</a>
+ <a href="#calculator">10. Allocation Calculator</a>
+ <a href="#takeaways">11. Key Takeaways</a>
+ <a href="#faq">12. FAQ</a>
+
+</section>
+
+<section class="card" id="summary">
+
+ <h2>1. 🎯 মূল ধারণা</h2>
+
+ <p>
+ Asset allocation বলতে আপনার investment portfolio-কে বিভিন্ন
+ asset class-এর মধ্যে ভাগ করার ধারণাকে বোঝায়। যেমন stocks,
+ bonds এবং অন্যান্য সম্পদ।
+ </p>
+
+ <p>
+ মূল উদ্দেশ্য শুধু বেশি return খোঁজা নয়। বরং return-এর
+ সম্ভাবনা, volatility এবং নিজের risk tolerance-এর মধ্যে
+ একটি ভারসাম্য তৈরি করা।
+ </p>
+
+ <div class="highlight">
+ <strong>সহজ ভাষায়:</strong>
+ “সব টাকা একই ধরনের asset-এ না রেখে ঝুঁকিকে কীভাবে
+ নিয়ন্ত্রণ করা যায়”—asset allocation সেই প্রশ্নের একটি
+ গুরুত্বপূর্ণ অংশ।
+ </div>
+
+</section>
+
+<section class="card" id="allocation">
+
+ <h2>2. 🧩 Asset Allocation</h2>
+
+ <p>
+ একটি portfolio-তে কত শতাংশ equity এবং কত শতাংশ
+ relatively defensive assets থাকবে—এটি investment plan-এর
+ একটি গুরুত্বপূর্ণ সিদ্ধান্ত।
+ </p>
+
+ <div class="grid">
+
+  <div class="mini">
+   <strong>Growth Assets</strong>
+   দীর্ঘমেয়াদে বেশি growth-এর সম্ভাবনা থাকতে পারে,
+   তবে price volatility-ও বেশি হতে পারে।
+  </div>
+
+  <div class="mini">
+   <strong>Defensive Assets</strong>
+   portfolio volatility কমানোর ভূমিকা রাখতে পারে,
+   তবে return potential তুলনামূলকভাবে কম হতে পারে।
+  </div>
+
+  <div class="mini">
+   <strong>Time Horizon</strong>
+   বিনিয়োগের সময়কাল allocation সিদ্ধান্তে গুরুত্বপূর্ণ।
+  </div>
+
+  <div class="mini">
+   <strong>Risk Capacity</strong>
+   শুধু মনস্তাত্ত্বিক comfort নয়, বাস্তবে কতটা loss
+   সামলাতে পারবেন সেটিও বিবেচ্য।
+  </div>
+
+ </div>
+
+</section>
+
+<section class="card" id="risk">
+
+ <h2>3. ⚠️ Risk বোঝা</h2>
+
+ <p>
+ Risk মানেই শুধু “market পড়ে যাবে” নয়। Investment risk-এর
+ বিভিন্ন দিক রয়েছে।
+ </p>
+
+ <ul>
+  <li>Capital loss-এর সম্ভাবনা</li>
+  <li>Price volatility</li>
+  <li>Inflation risk</li>
+  <li>Interest-rate risk</li>
+  <li>Liquidity risk</li>
+  <li>একটি নির্দিষ্ট asset বা company-র উপর অতিরিক্ত নির্ভরতা</li>
+ </ul>
+
+ <div class="highlight">
+ Historical return দেখে ভবিষ্যতের return নিশ্চিত ধরে নেওয়া
+ উচিত নয়। অতীতের performance ভবিষ্যতের ফলাফলের guarantee নয়।
+ </div>
+
+</section>
+
+<section class="card" id="diversification">
+
+ <h2>4. 🌐 Diversification</h2>
+
+ <p>
+ Diversification-এর উদ্দেশ্য হলো একটি নির্দিষ্ট investment-এর
+ উপর portfolio-র সম্পূর্ণ ফলাফল নির্ভর না করা।
+ </p>
+
+ <p>
+ একাধিক asset, sector, company বা geographic exposure-এর
+ মাধ্যমে concentration risk কমানোর চেষ্টা করা যায়।
+ </p>
+
+ <div class="grid">
+
+  <div class="mini">
+   <strong>Single Company Risk</strong>
+   একটি কোম্পানির সমস্যা পুরো portfolio-কে ক্ষতিগ্রস্ত করতে পারে।
+  </div>
+
+  <div class="mini">
+   <strong>Sector Risk</strong>
+   একটি sector-এর উপর অতিরিক্ত নির্ভরতা ঝুঁকি বাড়াতে পারে।
+  </div>
+
+  <div class="mini">
+   <strong>Asset Risk</strong>
+   এক ধরনের asset-এর উপর সম্পূর্ণ নির্ভরতা portfolio volatility বাড়াতে পারে।
+  </div>
+
+  <div class="mini">
+   <strong>Over-diversification</strong>
+   খুব বেশি holdings থাকলে portfolio manage ও understand
+   করাও কঠিন হতে পারে।
+  </div>
+
+ </div>
+
+</section>
+
+<section class="card" id="stocks">
+
+ <h2>5. 📈 Stocks</h2>
+
+ <p>
+ Stocks দীর্ঘমেয়াদে capital growth-এর সম্ভাবনা দিতে পারে,
+ কারণ investor ব্যবসার ownership-এর অংশ ধারণ করেন।
+ </p>
+
+ <p>
+ কিন্তু stock prices স্বল্পমেয়াদে অনেক ওঠানামা করতে পারে।
+ তাই equity exposure-এর সঙ্গে investment horizon এবং
+ risk capacity বিবেচনা করা গুরুত্বপূর্ণ।
+ </p>
+
+ <div class="highlight">
+ Stock market-এ historical long-term returns থাকলেও
+ কোনো নির্দিষ্ট সময়ে positive return নিশ্চিত নয়।
+ </div>
+
+</section>
+
+<section class="card" id="bonds">
+
+ <h2>6. 🏦 Bonds ও Defensive Assets</h2>
+
+ <p>
+ Bonds বা fixed-income investments portfolio-তে stability
+ এবং diversification-এর ভূমিকা পালন করতে পারে।
+ </p>
+
+ <ul>
+  <li>Interest-rate পরিবর্তনের প্রভাব থাকতে পারে।</li>
+  <li>Credit/default risk থাকতে পারে।</li>
+  <li>Inflation real return কমিয়ে দিতে পারে।</li>
+  <li>Different bond types-এর risk এক নয়।</li>
+ </ul>
+
+ <p>
+ তাই “bond মানেই risk-free”—এই ধারণা সঠিক নয়।
+ </p>
+
+</section>
+
+<section class="card" id="rebalance">
+
+ <h2>7. 🔄 Rebalancing</h2>
+
+ <p>
+ সময়ের সঙ্গে portfolio-এর বিভিন্ন অংশের value আলাদাভাবে
+ পরিবর্তিত হলে original allocation বদলে যেতে পারে।
+ </p>
+
+ <p>
+ Rebalancing হলো portfolio-কে আবার নির্ধারিত target allocation-এর
+ কাছাকাছি ফিরিয়ে আনার প্রক্রিয়া।
+ </p>
+
+ <div class="highlight">
+ Rebalancing-এর frequency ও method ব্যক্তিগত circumstances,
+ taxes, transaction costs এবং investment strategy-এর উপর
+ নির্ভর করতে পারে।
+ </div>
+
+</section>
+
+<section class="card" id="discipline">
+
+ <h2>8. 🧠 Investor Discipline</h2>
+
+ <p>
+ Asset allocation-এর একটি বড় challenge হলো market volatility-এর
+ সময় নিজের পরিকল্পনা ধরে রাখা।
+ </p>
+
+ <ul>
+  <li>Market rise দেখে অতিরিক্ত risk নেওয়া এড়ান।</li>
+  <li>Market fall দেখে panic selling এড়ানোর চেষ্টা করুন।</li>
+  <li>নিজের target allocation আগে থেকে লিখে রাখুন।</li>
+  <li>Portfolio review-এর জন্য নির্দিষ্ট সময় ঠিক করুন।</li>
+  <li>Short-term news-এর ভিত্তিতে বারবার strategy পরিবর্তন করবেন না।</li>
+ </ul>
+
+ <div class="highlight">
+ <strong>মূল শিক্ষা:</strong>
+ ভালো portfolio তৈরি করার পাশাপাশি সেটি disciplined ভাবে
+ পরিচালনা করাও গুরুত্বপূর্ণ।
+ </div>
+
+</section>
+
+<section class="card" id="check">
+
+ <h2>9. ✅ Portfolio Self-Check</h2>
+
+ <p>প্রতিটি প্রশ্নে নিজেকে ১ পয়েন্ট দিন:</p>
+
+ <div class="grid">
+
+  <div class="mini">☐ আমার investment goal পরিষ্কার।</div>
+  <div class="mini">☐ আমার time horizon জানা আছে।</div>
+  <div class="mini">☐ আমি সম্ভাব্য volatility বুঝি।</div>
+  <div class="mini">☐ আমার portfolio অতিরিক্ত concentrated নয়।</div>
+  <div class="mini">☐ আমার target allocation লিখে রাখা আছে।</div>
+  <div class="mini">☐ Rebalancing-এর একটি পরিকল্পনা আছে।</div>
+  <div class="mini">☐ Fees ও taxes-এর প্রভাব বিবেচনা করি।</div>
+  <div class="mini">☐ Market fall হলে কী করব তা আগে থেকে ভেবেছি।</div>
+
+ </div>
+
+ <div class="highlight">
+ এই checklist কোনো investment score বা personalized recommendation নয়।
+ </div>
+
+</section>
+
+<section class="card" id="calculator">
+
+ <h2>10. 🧮 Hypothetical Allocation Calculator</h2>
+
+ <p>
+ এটি শুধুমাত্র একটি mathematical illustration।
+ এটি আপনার জন্য কোনো asset allocation recommendation নয়।
+ </p>
+
+ <label>মোট Portfolio (₹)</label>
+ <input type="number" id="total" value="100000">
+
+ <label>Equity (%)</label>
+ <input type="number" id="equity" value="60" min="0" max="100">
+
+ <label>Defensive Assets (%)</label>
+ <input type="number" id="defensive" value="40" min="0" max="100">
+
+ <button class="cta" onclick="calculateAllocation()">
+ Calculate
+ </button>
+
+ <div class="calc-result" id="result">
+ ফলাফল এখানে দেখা যাবে।
+ </div>
+
+</section>
+
+<section class="card" id="takeaways">
+
+ <h2>11. 🔑 Key Takeaways</h2>
+
+ <ul>
+  <li>Asset allocation portfolio design-এর গুরুত্বপূর্ণ অংশ।</li>
+  <li>Risk এবং return-কে একসঙ্গে বিবেচনা করা দরকার।</li>
+  <li>Diversification concentration risk কমাতে সাহায্য করতে পারে।</li>
+  <li>Stocks এবং bonds-এর ভূমিকা এক নয়।</li>
+  <li>Time horizon allocation-এর সঙ্গে সম্পর্কিত।</li>
+  <li>Portfolio drift হলে rebalancing প্রয়োজন হতে পারে।</li>
+  <li>Fees ও taxes বাস্তব return-কে প্রভাবিত করতে পারে।</li>
+  <li>Market volatility সামলানোর জন্য discipline দরকার।</li>
+  <li>একটি portfolio strategy ব্যক্তির goal ও risk capacity-এর সঙ্গে সামঞ্জস্যপূর্ণ হওয়া উচিত।</li>
+ </ul>
+
+</section>
+
+<section class="card" id="faq">
+
+ <h2>12. ❓ FAQ</h2>
+
+ <div class="faq-item">
+  <button class="faq-q" onclick="faq(this)">
+   Asset allocation কী?
+  </button>
+  <div class="faq-a">
+   Portfolio-র অর্থ বিভিন্ন asset class-এর মধ্যে কীভাবে ভাগ
+   করা হবে, সেটিই asset allocation-এর মূল ধারণা।
+  </div>
+ </div>
+
+ <div class="faq-item">
+  <button class="faq-q" onclick="faq(this)">
+   Diversification কেন গুরুত্বপূর্ণ?
+  </button>
+  <div class="faq-a">
+   Diversification একটি নির্দিষ্ট investment, sector বা
+   asset-এর উপর অতিরিক্ত নির্ভরতা কমানোর চেষ্টা করে।
+   তবে diversification loss-এর guarantee দেয় না।
+  </div>
+ </div>
+
+ <div class="faq-item">
+  <button class="faq-q" onclick="faq(this)">
+   Rebalancing কী?
+  </button>
+  <div class="faq-a">
+   Portfolio-র actual allocation target allocation থেকে
+   সরে গেলে সেটিকে আবার target-এর কাছাকাছি আনার প্রক্রিয়াকে
+   rebalancing বলা হয়।
+  </div>
+ </div>
+
+ <div class="faq-item">
+  <button class="faq-q" onclick="faq(this)">
+   বেশি diversification কি সবসময় ভালো?
+  </button>
+  <div class="faq-a">
+   না। Diversification concentration risk কমাতে পারে,
+   কিন্তু অতিরিক্ত holdings portfolio-কে জটিল করে তুলতে পারে।
+   উপযুক্ত balance গুরুত্বপূর্ণ।
+  </div>
+ </div>
+
+ <div class="faq-item">
+  <button class="faq-q" onclick="faq(this)">
+   এই calculator কি investment advice দেয়?
+  </button>
+  <div class="faq-a">
+   না। Calculator শুধুমাত্র percentage ও amount-এর
+   mathematical illustration দেখায়।
+  </div>
+ </div>
+
+</section>
+
+<div class="disclaimer">
+ <strong>শিক্ষামূলক Disclaimer:</strong><br>
+ এই পেজটি শুধুমাত্র সাধারণ আর্থিক শিক্ষা এবং বইয়ের
+ ধারণা বোঝানোর জন্য তৈরি। এটি ব্যক্তিগত financial,
+ investment, tax বা legal advice নয়। কোনো investment
+ decision নেওয়ার আগে নিজের গবেষণা করুন এবং প্রয়োজনে
+ SEBI-registered professional-এর পরামর্শ নিন।
+ Market-linked investment-এ capital loss হতে পারে।
+</div>
+
+<div class="nav-buttons">
+ <a href="your-money-or-your-life.html">← Previous</a>
+ <a href="index.html">🏠 Home</a>
+ <a href="4-hour-workweek.html">Next →</a>
+</div>
+
+</main>
+
+<footer>
+ <strong>InvestBangla</strong>
+ <p>সহজ বাংলায় বিনিয়োগ ও ব্যক্তিগত অর্থনীতি শেখার প্ল্যাটফর্ম</p>
+ <small>© 2026 InvestBangla • Educational Content</small>
+</footer>
+
+<script>
+let fontSize=100;
+
+function toggleTheme(){
+ document.body.classList.toggle("dark");
+
+ localStorage.setItem(
+  "investbangla-theme",
+  document.body.classList.contains("dark")
+   ? "dark"
+   : "light"
+ );
+}
+
+if(localStorage.getItem("investbangla-theme")==="dark"){
+ document.body.classList.add("dark");
+}
+
+function changeFont(n){
+ fontSize += n*5;
+
+ if(fontSize<85) fontSize=85;
+ if(fontSize>125) fontSize=125;
+
+ document.querySelector(".container").style.fontSize=
+  fontSize+"%";
+}
+
+window.addEventListener("scroll",()=>{
+ const h=document.documentElement;
+
+ const percent=
+  (h.scrollTop/(h.scrollHeight-h.clientHeight))*100;
+
+ document.getElementById("progress").style.width=
+  percent+"%";
+});
+
+function sharePage(){
+
+ if(navigator.share){
+
+  navigator.share({
+   title:"The Intelligent Asset Allocator — বাংলা সারাংশ",
+   url:location.href
+  });
+
+ }else{
+
+  navigator.clipboard.writeText(location.href);
+  alert("Link copied!");
+
+ }
+}
+
+function copyPage(){
+
+ const text=document.querySelector("main").innerText;
+
+ navigator.clipboard.writeText(text).then(()=>{
+  alert("Page content copied!");
+ });
+
+}
+
+function savePage(){
+
+ localStorage.setItem(
+  "saved-intelligent-asset-allocator",
+  "yes"
+ );
+
+ alert("এই বইটি আপনার ডিভাইসে Save হয়েছে।");
+
+}
+
+function searchText(){
+
+ const q=
+  document.getElementById("search").value.toLowerCase();
+
+ document.querySelectorAll(".card").forEach(card=>{
+
+  card.style.display=
+   card.innerText.toLowerCase().includes(q)
+    ? ""
+    : "none";
+
+ });
+
+}
+
+function faq(btn){
+ btn.parentElement.classList.toggle("open");
+}
+
+function calculateAllocation(){
+
+ const total=
+  parseFloat(document.getElementById("total").value)||0;
+
+ const equity=
+  parseFloat(document.getElementById("equity").value)||0;
+
+ const defensive=
+  parseFloat(document.getElementById("defensive").value)||0;
+
+ if(equity<0 || defensive<0 ||
+    equity>100 || defensive>100){
+
+  document.getElementById("result").innerHTML=
+   "Percentage 0 থেকে 100-এর মধ্যে দিন।";
+
+  return;
+ }
+
+ const sum=equity+defensive;
+
+ const equityAmount=
+  total*(equity/100);
+
+ const defensiveAmount=
+  total*(defensive/100);
+
+ if(sum!==100){
+
+  document.getElementById("result").innerHTML=
+   "⚠️ Equity + Defensive Assets = "+sum+
+   "%। মোট 100% করুন।";
+
+  return;
+ }
+
+ document.getElementById("result").innerHTML=
+  "Equity: ₹"+equityAmount.toFixed(2)+
+  "<br>Defensive Assets: ₹"+
+  defensiveAmount.toFixed(2)+
+  "<br><small>শুধুমাত্র hypothetical allocation illustration।</small>";
+
+}
+</script>
+
+</body>
+</html>
