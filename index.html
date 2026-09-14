@@ -5,16 +5,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>InvestBangla — সহজ বাংলায় Investment শেখার প্ল্যাটফর্ম</title>
+<title>InvestBangla — বাংলায় বিনিয়োগ শেখার আধুনিক প্ল্যাটফর্ম</title>
 
-<meta name="description" content="জনপ্রিয় Investment ও Personal Finance বইয়ের সহজ বাংলা সারাংশ, গুরুত্বপূর্ণ শিক্ষা এবং financial literacy বিষয়ক শিক্ষামূলক কনটেন্ট।">
+<meta name="description"
+content="InvestBangla-তে জনপ্রিয় Investment ও Personal Finance বইয়ের সহজ বাংলা সারাংশ, financial concepts এবং দীর্ঘমেয়াদি বিনিয়োগের শিক্ষা পড়ুন।">
+
+<meta name="keywords"
+content="investment Bengali, investment books Bengali, personal finance Bengali, financial education Bengali, বিনিয়োগ শেখা, বাংলা investment বই">
+
+<meta name="author" content="InvestBangla">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical"
 href="https://mahatodeepak.github.io/InvestBangla/">
 
+<meta property="og:title"
+content="InvestBangla — বাংলায় বিনিয়োগ শেখার প্ল্যাটফর্ম">
+
+<meta property="og:description"
+content="জনপ্রিয় Investment ও Personal Finance বইয়ের সহজ বাংলা সারাংশ।">
+
+<meta property="og:type" content="website">
+
+<meta property="og:url"
+content="https://mahatodeepak.github.io/InvestBangla/">
+
+<meta property="og:site_name"
+content="InvestBangla">
+
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"InvestBangla",
+  "url":"https://mahatodeepak.github.io/InvestBangla/",
+  "description":"বাংলায় Investment ও Personal Finance শেখার শিক্ষামূলক প্ল্যাটফর্ম",
+  "inLanguage":"bn"
+}
+</script>
+
+
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 *{
   box-sizing:border-box;
@@ -28,40 +65,47 @@ body{
   margin:0;
   font-family:
     "Noto Sans Bengali",
+    "Noto Sans",
     Arial,
     sans-serif;
-  background:#f4f7fb;
+  background:#f5f7fb;
   color:#172033;
   line-height:1.7;
 }
 
+a{
+  text-decoration:none;
+}
 
-/* ================= HEADER ================= */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
   position:sticky;
   top:0;
-  z-index:100;
-  background:rgba(9,18,35,.94);
-  backdrop-filter:blur(12px);
+  z-index:999;
+  background:rgba(7,15,29,.82);
+  backdrop-filter:blur(18px);
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .header{
-  max-width:1150px;
+  max-width:1180px;
   margin:auto;
-  padding:15px 20px;
+  height:70px;
+  padding:0 22px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
+  justify-content:space-between;
 }
 
 .logo{
-  text-decoration:none;
-  color:white;
+  color:#fff;
   font-size:25px;
-  font-weight:800;
-  letter-spacing:-.5px;
+  font-weight:900;
+  letter-spacing:-.8px;
 }
 
 .logo span{
@@ -70,492 +114,808 @@ header{
 
 .nav{
   display:flex;
-  gap:22px;
+  gap:26px;
 }
 
 .nav a{
   color:#cbd5e1;
-  text-decoration:none;
   font-size:14px;
+  transition:.2s;
 }
 
 .nav a:hover{
-  color:white;
+  color:#fff;
 }
 
 
-/* ================= HERO ================= */
+/* =========================
+   HERO
+========================= */
 
 .hero{
   position:relative;
   overflow:hidden;
+  min-height:610px;
+  color:#fff;
+
   background:
     radial-gradient(
-      circle at 20% 20%,
-      rgba(59,130,246,.35),
-      transparent 35%
+      circle at 12% 20%,
+      rgba(37,99,235,.35),
+      transparent 28%
     ),
+
     radial-gradient(
-      circle at 80% 30%,
-      rgba(139,92,246,.30),
+      circle at 88% 20%,
+      rgba(124,58,237,.32),
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(14,165,233,.15),
       transparent 35%
     ),
+
     linear-gradient(
       135deg,
-      #081225,
-      #14264a,
+      #050b18,
+      #0b1730 50%,
       #111827
     );
-  color:white;
 }
+
+
+/* decorative circles */
+
+.hero:before{
+  content:"";
+  position:absolute;
+  width:360px;
+  height:360px;
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:50%;
+  top:-160px;
+  right:-80px;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:280px;
+  height:280px;
+  border:1px solid rgba(96,165,250,.08);
+  border-radius:50%;
+  bottom:-140px;
+  left:-80px;
+}
+
 
 .hero-inner{
-  max-width:1000px;
+  position:relative;
+  z-index:2;
+  max-width:1050px;
   margin:auto;
   text-align:center;
-  padding:75px 20px 80px;
+  padding:90px 20px 110px;
 }
 
-.pill{
+
+.eyebrow{
   display:inline-flex;
   align-items:center;
-  gap:7px;
-  padding:7px 14px;
+  gap:8px;
+  padding:8px 16px;
   border-radius:50px;
-  background:rgba(255,255,255,.10);
-  border:1px solid rgba(255,255,255,.15);
+
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12);
+
   color:#bfdbfe;
   font-size:13px;
-  margin-bottom:20px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,.15);
+
+  margin-bottom:25px;
 }
+
 
 .hero h1{
-  margin:0 auto 18px;
-  max-width:850px;
-  font-size:46px;
-  line-height:1.25;
-  letter-spacing:-1px;
+  max-width:900px;
+  margin:0 auto 22px;
+
+  font-size:58px;
+  line-height:1.18;
+  letter-spacing:-2px;
+  font-weight:900;
 }
 
+
 .hero h1 span{
-  background:linear-gradient(
-    90deg,
-    #60a5fa,
-    #c4b5fd
-  );
+  background:
+    linear-gradient(
+      90deg,
+      #60a5fa,
+      #a78bfa,
+      #38bdf8
+    );
+
   -webkit-background-clip:text;
+  background-clip:text;
   color:transparent;
 }
 
-.hero-text{
+
+.hero-description{
   max-width:720px;
   margin:auto;
+
   color:#cbd5e1;
-  font-size:17px;
+  font-size:18px;
 }
 
 
-/* ================= SEARCH ================= */
-
-.search{
-  max-width:620px;
-  margin:32px auto 0;
-  position:relative;
+.hero-buttons{
+  display:flex;
+  justify-content:center;
+  gap:13px;
+  margin-top:34px;
+  flex-wrap:wrap;
 }
 
-.search input{
-  width:100%;
-  padding:17px 22px 17px 48px;
-  border:1px solid rgba(255,255,255,.15);
-  border-radius:14px;
-  background:white;
-  color:#172033;
-  font-size:16px;
-  outline:none;
+
+.primary-btn{
+  background:#2563eb;
+  color:#fff;
+  padding:13px 24px;
+  border-radius:10px;
+  font-weight:700;
+
   box-shadow:
-    0 15px 40px rgba(0,0,0,.25);
-}
+    0 10px 25px rgba(37,99,235,.3);
 
-.search-icon{
-  position:absolute;
-  left:18px;
-  top:14px;
-  font-size:21px;
+  transition:.25s;
 }
 
 
-/* ================= STATS ================= */
+.primary-btn:hover{
+  transform:translateY(-2px);
+  background:#3b82f6;
+}
+
+
+.secondary-btn{
+  color:#e2e8f0;
+  padding:13px 24px;
+  border-radius:10px;
+
+  border:1px solid rgba(255,255,255,.15);
+
+  background:rgba(255,255,255,.05);
+
+  transition:.25s;
+}
+
+
+.secondary-btn:hover{
+  background:rgba(255,255,255,.1);
+}
+
+
+/* =========================
+   STATS
+========================= */
 
 .stats{
-  max-width:950px;
-  margin:-30px auto 0;
-  position:relative;
-  z-index:5;
+  max-width:1000px;
   padding:0 20px;
+  margin:-42px auto 0;
+  position:relative;
+  z-index:10;
 }
 
+
 .stats-box{
-  background:white;
+  background:rgba(255,255,255,.96);
+
   border:1px solid #e2e8f0;
-  border-radius:18px;
+
+  border-radius:20px;
+
   box-shadow:
-    0 12px 35px rgba(15,23,42,.10);
+    0 20px 50px rgba(15,23,42,.12);
+
   display:grid;
   grid-template-columns:
     repeat(3,1fr);
+
   overflow:hidden;
 }
 
+
 .stat{
   text-align:center;
-  padding:23px 12px;
+  padding:27px 10px;
+
   border-right:1px solid #e5e7eb;
 }
+
 
 .stat:last-child{
   border-right:none;
 }
 
+
 .stat-number{
-  font-size:27px;
-  font-weight:800;
+  font-size:28px;
+  font-weight:900;
   color:#2563eb;
 }
 
+
 .stat-label{
-  font-size:13px;
+  font-size:12px;
   color:#64748b;
 }
 
 
-/* ================= MAIN ================= */
+/* =========================
+   MAIN
+========================= */
 
 .container{
-  max-width:1150px;
+  max-width:1180px;
   margin:auto;
-  padding:65px 20px;
+  padding:85px 22px;
 }
 
-.section-title{
+
+.section-heading{
   text-align:center;
-  margin-bottom:35px;
+  margin-bottom:42px;
 }
 
-.section-title h2{
-  margin:0 0 8px;
-  font-size:30px;
+
+.section-heading .small{
+  color:#2563eb;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
-.section-title p{
-  margin:0;
+
+.section-heading h2{
+  margin:6px 0 8px;
+  font-size:34px;
+  letter-spacing:-.8px;
+}
+
+
+.section-heading p{
   color:#64748b;
+  margin:0;
 }
 
 
-/* ================= BOOK GRID ================= */
+/* =========================
+   BOOKS
+========================= */
 
-.books{
+.book-grid{
   display:grid;
+
   grid-template-columns:
     repeat(auto-fit,minmax(290px,1fr));
+
   gap:24px;
 }
 
+
 .book{
-  background:white;
-  border-radius:18px;
+  position:relative;
+  background:#fff;
+
   border:1px solid #e2e8f0;
+
+  border-radius:20px;
+
   overflow:hidden;
+
   box-shadow:
-    0 7px 25px rgba(15,23,42,.06);
+    0 8px 28px rgba(15,23,42,.055);
+
   transition:
-    transform .25s,
-    box-shadow .25s;
+    transform .28s ease,
+    box-shadow .28s ease,
+    border-color .28s ease;
 }
+
 
 .book:hover{
-  transform:translateY(-7px);
+  transform:translateY(-8px);
+
   box-shadow:
-    0 18px 40px rgba(15,23,42,.12);
+    0 22px 50px rgba(15,23,42,.13);
+
+  border-color:#bfdbfe;
 }
 
-.book-color{
-  height:7px;
-  background:linear-gradient(
-    90deg,
-    #2563eb,
-    #7c3aed
-  );
+
+.book-top-line{
+  height:5px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #7c3aed,
+      #06b6d4
+    );
 }
+
 
 .book-body{
-  padding:25px;
+  padding:27px;
 }
+
 
 .book-meta{
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  margin-bottom:16px;
+  justify-content:space-between;
+
+  margin-bottom:17px;
 }
 
-.number{
-  font-size:12px;
+
+.book-number{
   color:#94a3b8;
-  font-weight:bold;
+  font-size:11px;
+  font-weight:800;
 }
+
 
 .category{
-  font-size:10px;
-  font-weight:bold;
-  color:#1d4ed8;
+  padding:5px 10px;
+
   background:#eff6ff;
-  padding:5px 9px;
-  border-radius:20px;
+  color:#1d4ed8;
+
+  border-radius:50px;
+
+  font-size:9px;
+  font-weight:900;
 }
+
 
 .book h3{
   font-size:21px;
   line-height:1.4;
+
   margin:0 0 5px;
 }
+
 
 .author{
   color:#64748b;
   font-size:14px;
-  margin-bottom:14px;
+  margin-bottom:15px;
 }
 
-.book-description{
+
+.description{
   color:#64748b;
   font-size:14px;
-  min-height:76px;
+  min-height:82px;
 }
 
-.read{
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  background:#2563eb;
-  color:white;
+
+.read-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  width:100%;
+
+  margin-top:22px;
+
   padding:12px;
+
+  background:#172554;
+  color:#fff;
+
   border-radius:10px;
-  font-weight:bold;
-  margin-top:20px;
-  transition:.2s;
+
+  font-size:14px;
+  font-weight:800;
+
+  transition:.25s;
 }
 
-.read:hover{
-  background:#1d4ed8;
+
+.read-btn:hover{
+  background:#2563eb;
 }
 
 
-/* ================= ABOUT ================= */
+/* =========================
+   FEATURED IDEA
+========================= */
 
-.about{
-  margin-top:65px;
+.featured{
+  margin-top:75px;
+
   background:
     linear-gradient(
       135deg,
-      #ffffff,
-      #f8fbff
+      #0b1730,
+      #172554
     );
+
+  border-radius:24px;
+
+  padding:45px;
+
+  color:white;
+
+  position:relative;
+  overflow:hidden;
+
+  box-shadow:
+    0 20px 50px rgba(15,23,42,.15);
+}
+
+
+.featured:after{
+  content:"₹";
+
+  position:absolute;
+
+  right:40px;
+  bottom:-65px;
+
+  font-size:220px;
+
+  color:rgba(255,255,255,.035);
+
+  font-weight:900;
+}
+
+
+.featured-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+}
+
+
+.featured-label{
+  color:#93c5fd;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+
+.featured h2{
+  font-size:31px;
+  margin:8px 0 12px;
+}
+
+
+.featured p{
+  color:#cbd5e1;
+  margin:0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+  margin-top:75px;
+}
+
+
+.about-box{
+  background:#fff;
+
   border:1px solid #e2e8f0;
-  border-radius:20px;
+
+  border-radius:22px;
+
   padding:38px;
+
   box-shadow:
     0 8px 30px rgba(15,23,42,.05);
 }
 
-.about h2{
+
+.about-box h2{
   margin:0 0 12px;
-  font-size:28px;
+  font-size:29px;
 }
 
-.about p{
-  color:#475569;
+
+.about-box>p{
   max-width:850px;
+  color:#475569;
 }
 
 
-/* ================= BENEFITS ================= */
-
-.benefits{
+.features{
   display:grid;
+
   grid-template-columns:
     repeat(3,1fr);
+
   gap:18px;
-  margin-top:25px;
+
+  margin-top:30px;
 }
 
-.benefit{
+
+.feature{
   background:#f8fafc;
+
   border:1px solid #e2e8f0;
+
   padding:22px;
-  border-radius:14px;
+
+  border-radius:15px;
 }
 
-.benefit-icon{
-  font-size:28px;
+
+.feature-icon{
+  font-size:27px;
   margin-bottom:5px;
 }
 
-.benefit h3{
+
+.feature h3{
   margin:0 0 5px;
   font-size:17px;
 }
 
-.benefit p{
+
+.feature p{
   margin:0;
+  color:#64748b;
   font-size:13px;
 }
 
 
-/* ================= FAQ ================= */
+/* =========================
+   FAQ
+========================= */
 
 .faq{
-  margin-top:65px;
+  margin-top:75px;
 }
 
-.faq h2{
+
+.faq-title{
   text-align:center;
-  font-size:28px;
-  margin-bottom:25px;
+  font-size:30px;
+  margin-bottom:28px;
 }
 
-.faq-item{
-  background:white;
+
+details{
+  background:#fff;
+
   border:1px solid #e2e8f0;
-  border-radius:13px;
-  padding:20px;
+
+  border-radius:14px;
+
   margin-bottom:12px;
+
+  overflow:hidden;
 }
 
-.faq-item h3{
-  margin:0 0 7px;
-  font-size:17px;
+
+summary{
+  cursor:pointer;
+
+  padding:20px;
+
+  font-weight:800;
+
+  list-style:none;
 }
 
-.faq-item p{
+
+summary::-webkit-details-marker{
+  display:none;
+}
+
+
+summary:after{
+  content:"+";
+
+  float:right;
+
+  color:#2563eb;
+
+  font-size:20px;
+}
+
+
+details[open] summary:after{
+  content:"−";
+}
+
+
+details p{
+  padding:0 20px 20px;
+
   margin:0;
+
   color:#64748b;
+
   font-size:14px;
 }
 
 
-/* ================= DISCLAIMER ================= */
+/* =========================
+   DISCLAIMER
+========================= */
 
 .disclaimer{
-  margin-top:45px;
+  margin-top:50px;
+
+  padding:21px;
+
+  border-radius:14px;
+
   background:#fff7ed;
+
   border:1px solid #fed7aa;
+
   color:#7c2d12;
-  padding:20px;
-  border-radius:13px;
+
   font-size:13px;
 }
 
 
-/* ================= FOOTER ================= */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
-  background:#081225;
+  background:#050b18;
+
   color:#94a3b8;
+
   text-align:center;
-  padding:40px 20px;
+
+  padding:50px 20px;
 }
 
+
 .footer-logo{
-  font-size:23px;
-  font-weight:800;
   color:white;
+
+  font-size:26px;
+
+  font-weight:900;
 }
+
 
 .footer-logo span{
   color:#60a5fa;
 }
 
+
 footer p{
   margin:5px 0;
+
   font-size:13px;
 }
 
 
-/* ================= MOBILE ================= */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:700px){
+
+  .header{
+    height:62px;
+    justify-content:center;
+  }
 
   .nav{
     display:none;
   }
 
-  .header{
-    justify-content:center;
+  .hero{
+    min-height:auto;
   }
 
   .hero-inner{
-    padding:55px 18px 65px;
+    padding:60px 18px 85px;
   }
 
   .hero h1{
-    font-size:33px;
-    letter-spacing:-.5px;
+    font-size:36px;
+    letter-spacing:-1px;
   }
 
-  .hero-text{
+  .hero-description{
     font-size:15px;
   }
 
   .stats{
-    margin-top:-25px;
+    margin-top:-30px;
   }
 
   .stats-box{
     grid-template-columns:
       repeat(3,1fr);
+
+    border-radius:16px;
   }
 
   .stat{
-    padding:17px 5px;
+    padding:18px 5px;
   }
 
   .stat-number{
-    font-size:22px;
+    font-size:21px;
   }
 
   .stat-label{
-    font-size:10px;
+    font-size:9px;
   }
 
   .container{
-    padding:50px 15px;
+    padding:60px 15px;
   }
 
-  .section-title h2{
-    font-size:25px;
+  .section-heading h2{
+    font-size:27px;
   }
 
-  .books{
+  .book-grid{
     grid-template-columns:1fr;
   }
 
-  .about{
+  .featured{
+    padding:28px;
+    border-radius:19px;
+  }
+
+  .featured h2{
+    font-size:25px;
+  }
+
+  .about-box{
     padding:25px;
   }
 
-  .benefits{
+  .features{
     grid-template-columns:1fr;
   }
 
 }
 
 
-/* ================= NO RESULTS ================= */
+/* =========================
+   SEARCH RESULT
+========================= */
 
 .no-results{
   display:none;
+
   text-align:center;
-  padding:30px;
+
+  padding:35px;
+
   color:#64748b;
 }
 
@@ -567,20 +927,32 @@ footer p{
 <body>
 
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
   <div class="header">
 
-    <a href="index.html" class="logo">
+    <a
+      href="index.html"
+      class="logo">
       Invest<span>Bangla</span>
     </a>
 
     <nav class="nav">
-      <a href="#books">বই</a>
-      <a href="#about">সম্পর্কে</a>
-      <a href="#faq">FAQ</a>
+
+      <a href="#books">
+        বই
+      </a>
+
+      <a href="#about">
+        আমাদের সম্পর্কে
+      </a>
+
+      <a href="#faq">
+        FAQ
+      </a>
+
     </nav>
 
   </div>
@@ -589,41 +961,55 @@ footer p{
 
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
   <div class="hero-inner">
 
-    <div class="pill">
-      📚 বাংলা Financial Education
+    <div class="eyebrow">
+      ✦ বাংলা Financial Education
     </div>
 
+
     <h1>
-      বিনিয়োগ শিখুন
-      <span>সহজ বাংলায়</span>
+
+      আপনার অর্থ সম্পর্কে
+      <span>আরও ভালোভাবে শিখুন</span>
+
     </h1>
 
-    <p class="hero-text">
-      বিশ্বের জনপ্রিয় Investment ও Personal Finance
-      বইয়ের গুরুত্বপূর্ণ ধারণা সহজ বাংলায় জানুন।
-      নিজের financial knowledge ধীরে ধীরে তৈরি করুন।
+
+    <p class="hero-description">
+
+      জনপ্রিয় Investment ও Personal Finance বইয়ের
+      গুরুত্বপূর্ণ ধারণা সহজ বাংলায়।
+      বই পড়ার সময় কম হলেও শেখার সুযোগ থাকুক।
+
     </p>
 
 
-    <div class="search">
+    <div class="hero-buttons">
 
-      <span class="search-icon">🔎</span>
+      <a
+        href="#books"
+        class="primary-btn">
 
-      <input
-        type="search"
-        id="searchInput"
-        placeholder="বই বা লেখকের নাম খুঁজুন..."
-        aria-label="বই খুঁজুন"
-        oninput="searchBooks()"
-      >
+        📚 বই দেখা শুরু করুন
+
+      </a>
+
+
+      <a
+        href="#about"
+        class="secondary-btn">
+
+        InvestBangla সম্পর্কে
+
+      </a>
 
     </div>
+
 
   </div>
 
@@ -631,11 +1017,12 @@ footer p{
 
 
 
-<!-- STATS -->
+<!-- ================= STATS ================= -->
 
 <div class="stats">
 
   <div class="stats-box">
+
 
     <div class="stat">
 
@@ -644,7 +1031,7 @@ footer p{
       </div>
 
       <div class="stat-label">
-        বইয়ের সারাংশ
+        নির্বাচিত বই
       </div>
 
     </div>
@@ -657,7 +1044,7 @@ footer p{
       </div>
 
       <div class="stat-label">
-        সহজ ভাষা
+        সহজ ভাষায়
       </div>
 
     </div>
@@ -666,7 +1053,7 @@ footer p{
     <div class="stat">
 
       <div class="stat-number">
-        ১০০%
+        100%
       </div>
 
       <div class="stat-label">
@@ -675,35 +1062,72 @@ footer p{
 
     </div>
 
+
   </div>
 
 </div>
 
 
 
-<!-- MAIN -->
+<!-- ================= MAIN ================= -->
 
 <main class="container">
 
 
-  <!-- BOOK SECTION -->
+  <!-- BOOKS -->
 
   <section id="books">
 
-    <div class="section-title">
+    <div class="section-heading">
+
+      <div class="small">
+        INVESTMENT LIBRARY
+      </div>
 
       <h2>
-        📚 জনপ্রিয় বই
+        📚 আমাদের বইয়ের সংগ্রহ
       </h2>
 
       <p>
-        নির্বাচিত বই থেকে গুরুত্বপূর্ণ শিক্ষা পড়ুন
+        একটি বই থেকে একটি ধারণা — ধীরে ধীরে financial knowledge তৈরি করুন।
       </p>
 
     </div>
 
 
-    <div class="books" id="bookGrid">
+    <!-- SEARCH -->
+
+    <div
+      style="
+      max-width:600px;
+      margin:-15px auto 35px;
+      ">
+
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="🔎  বই বা লেখকের নাম খুঁজুন..."
+        aria-label="বই খুঁজুন"
+        oninput="searchBooks()"
+
+        style="
+        width:100%;
+        padding:15px 18px;
+        border:1px solid #dbe3ef;
+        border-radius:12px;
+        font-size:15px;
+        outline:none;
+        background:#fff;
+        box-shadow:0 5px 18px rgba(15,23,42,.05);
+        "
+      >
+
+    </div>
+
+
+    <div
+      class="book-grid"
+      id="bookGrid">
 
 
       <!-- BOOK 1 -->
@@ -712,14 +1136,14 @@ footer p{
         class="book"
         data-search="psychology of money morgan housel মর্গান হাউজেল">
 
-        <div class="book-color"></div>
+        <div class="book-top-line"></div>
 
         <div class="book-body">
 
           <div class="book-meta">
 
-            <span class="number">
-              বই ০১
+            <span class="book-number">
+              BOOK 01
             </span>
 
             <span class="category">
@@ -736,15 +1160,21 @@ footer p{
             Morgan Housel
           </div>
 
-          <div class="book-description">
-            টাকা, সম্পদ, ঝুঁকি এবং মানুষের financial
-            behavior সম্পর্কে গুরুত্বপূর্ণ শিক্ষা।
+          <div class="description">
+
+            টাকা, সম্পদ, ঝুঁকি, লোভ, ভয় এবং
+            মানুষের financial behavior সম্পর্কে
+            গুরুত্বপূর্ণ ধারণা।
+
           </div>
 
           <a
             href="psychology-of-money.html"
-            class="read">
-            সারাংশ পড়ুন →
+            class="read-btn">
+
+            সারাংশ পড়ুন
+            <span>→</span>
+
           </a>
 
         </div>
@@ -759,14 +1189,14 @@ footer p{
         class="book"
         data-search="intelligent investor benjamin graham বেঞ্জামিন গ্রাহাম">
 
-        <div class="book-color"></div>
+        <div class="book-top-line"></div>
 
         <div class="book-body">
 
           <div class="book-meta">
 
-            <span class="number">
-              বই ০২
+            <span class="book-number">
+              BOOK 02
             </span>
 
             <span class="category">
@@ -783,15 +1213,21 @@ footer p{
             Benjamin Graham
           </div>
 
-          <div class="book-description">
-            Value Investing, Margin of Safety এবং
-            disciplined investing-এর মৌলিক ধারণা।
+          <div class="description">
+
+            Value Investing, Margin of Safety,
+            Mr. Market এবং disciplined investing-এর
+            মৌলিক ধারণা।
+
           </div>
 
           <a
             href="intelligent-investor.html"
-            class="read">
-            সারাংশ পড়ুন →
+            class="read-btn">
+
+            সারাংশ পড়ুন
+            <span>→</span>
+
           </a>
 
         </div>
@@ -806,14 +1242,14 @@ footer p{
         class="book"
         data-search="one up on wall street peter lynch পিটার লিঞ্চ">
 
-        <div class="book-color"></div>
+        <div class="book-top-line"></div>
 
         <div class="book-body">
 
           <div class="book-meta">
 
-            <span class="number">
-              বই ০৩
+            <span class="book-number">
+              BOOK 03
             </span>
 
             <span class="category">
@@ -830,15 +1266,21 @@ footer p{
             Peter Lynch
           </div>
 
-          <div class="book-description">
-            সাধারণ বিনিয়োগকারী কীভাবে পর্যবেক্ষণ,
-            গবেষণা এবং ধৈর্যের মাধ্যমে কোম্পানি বুঝতে পারে।
+          <div class="description">
+
+            সাধারণ বিনিয়োগকারী কীভাবে নিজের
+            পর্যবেক্ষণ ও গবেষণার মাধ্যমে
+            কোম্পানি বুঝতে পারে।
+
           </div>
 
           <a
             href="one-up-on-wall-street.html"
-            class="read">
-            সারাংশ পড়ুন →
+            class="read-btn">
+
+            সারাংশ পড়ুন
+            <span>→</span>
+
           </a>
 
         </div>
@@ -853,14 +1295,14 @@ footer p{
         class="book"
         data-search="little book common sense investing john bogle জন বোগল">
 
-        <div class="book-color"></div>
+        <div class="book-top-line"></div>
 
         <div class="book-body">
 
           <div class="book-meta">
 
-            <span class="number">
-              বই ০৪
+            <span class="book-number">
+              BOOK 04
             </span>
 
             <span class="category">
@@ -877,15 +1319,21 @@ footer p{
             John C. Bogle
           </div>
 
-          <div class="book-description">
-            Index Investing, diversification, কম খরচ
-            এবং দীর্ঘমেয়াদি বিনিয়োগের ধারণা।
+          <div class="description">
+
+            Index Investing, diversification,
+            কম খরচ এবং দীর্ঘমেয়াদি
+            বিনিয়োগের ধারণা।
+
           </div>
 
           <a
             href="little-book-common-sense-investing.html"
-            class="read">
-            সারাংশ পড়ুন →
+            class="read-btn">
+
+            সারাংশ পড়ুন
+            <span>→</span>
+
           </a>
 
         </div>
@@ -900,14 +1348,14 @@ footer p{
         class="book"
         data-search="rich dad poor dad robert kiyosaki রবার্ট কিয়োসাকি">
 
-        <div class="book-color"></div>
+        <div class="book-top-line"></div>
 
         <div class="book-body">
 
           <div class="book-meta">
 
-            <span class="number">
-              বই ০৫
+            <span class="book-number">
+              BOOK 05
             </span>
 
             <span class="category">
@@ -924,15 +1372,21 @@ footer p{
             Robert T. Kiyosaki
           </div>
 
-          <div class="book-description">
-            Asset, Liability, Cash Flow এবং financial
-            education-এর গুরুত্বপূর্ণ ধারণা।
+          <div class="description">
+
+            Asset, Liability, Cash Flow এবং
+            financial education-এর গুরুত্বপূর্ণ
+            ধারণা।
+
           </div>
 
           <a
             href="rich-dad-poor-dad.html"
-            class="read">
-            সারাংশ পড়ুন →
+            class="read-btn">
+
+            সারাংশ পড়ুন
+            <span>→</span>
+
           </a>
 
         </div>
@@ -947,7 +1401,35 @@ footer p{
       id="noResults"
       class="no-results">
 
-      কোনো বই পাওয়া যায়নি।
+      😔 কোনো বই পাওয়া যায়নি।
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FEATURED -->
+
+  <section class="featured">
+
+    <div class="featured-content">
+
+      <div class="featured-label">
+        FINANCIAL KNOWLEDGE
+      </div>
+
+      <h2>
+        বিনিয়োগ শুরু করার আগে জ্ঞান তৈরি করুন
+      </h2>
+
+      <p>
+
+        বাজারে দ্রুত লাভের চেয়ে নিজের financial
+        knowledge তৈরি করা অনেক বেশি গুরুত্বপূর্ণ।
+        ভালো বই সেই শেখার যাত্রার একটি শক্তিশালী শুরু হতে পারে।
+
+      </p>
 
     </div>
 
@@ -961,77 +1443,87 @@ footer p{
     class="about"
     id="about">
 
-    <h2>
-      InvestBangla সম্পর্কে
-    </h2>
+    <div class="about-box">
 
-    <p>
-      InvestBangla হলো একটি বাংলা শিক্ষামূলক প্ল্যাটফর্ম,
-      যেখানে Investment, Personal Finance এবং Financial
-      Psychology সম্পর্কিত জনপ্রিয় বইয়ের গুরুত্বপূর্ণ
-      ধারণাগুলো সহজ ভাষায় তুলে ধরা হয়।
-    </p>
+      <h2>
+        InvestBangla কী?
+      </h2>
 
-    <p>
-      আমাদের উদ্দেশ্য হলো financial concepts-কে সহজ করে
-      উপস্থাপন করা, যাতে একজন নতুন পাঠকও ধীরে ধীরে
-      নিজের financial literacy বাড়াতে পারেন।
-    </p>
+      <p>
+
+        InvestBangla একটি বাংলা educational platform,
+        যেখানে Investment, Personal Finance এবং
+        Financial Psychology সম্পর্কিত জনপ্রিয়
+        বইয়ের গুরুত্বপূর্ণ ধারণাগুলো সহজ ভাষায়
+        উপস্থাপন করা হয়।
+
+      </p>
+
+      <p>
+
+        আমাদের লক্ষ্য হলো financial concepts-কে
+        সহজ করে উপস্থাপন করা, যাতে একজন নতুন
+        পাঠকও ধীরে ধীরে নিজের financial literacy
+        তৈরি করতে পারেন।
+
+      </p>
 
 
-    <div class="benefits">
+      <div class="features">
 
 
-      <div class="benefit">
+        <div class="feature">
 
-        <div class="benefit-icon">
-          📖
+          <div class="feature-icon">
+            📖
+          </div>
+
+          <h3>
+            সহজ ভাষা
+          </h3>
+
+          <p>
+            জটিল ধারণাগুলো সহজ বাংলায় বোঝার চেষ্টা।
+          </p>
+
         </div>
 
-        <h3>
-          সহজ বাংলা
-        </h3>
 
-        <p>
-          জটিল ধারণা সহজ ভাষায় বোঝার চেষ্টা।
-        </p>
+        <div class="feature">
 
-      </div>
+          <div class="feature-icon">
+            🧠
+          </div>
 
+          <h3>
+            জ্ঞানকে গুরুত্ব
+          </h3>
 
-      <div class="benefit">
+          <p>
+            সিদ্ধান্তের আগে financial concepts বোঝার উপর জোর।
+          </p>
 
-        <div class="benefit-icon">
-          💡
         </div>
 
-        <h3>
-          গুরুত্বপূর্ণ শিক্ষা
-        </h3>
 
-        <p>
-          বইয়ের মূল concepts দ্রুত বুঝতে সাহায্য করে।
-        </p>
+        <div class="feature">
 
-      </div>
+          <div class="feature-icon">
+            🎯
+          </div>
 
+          <h3>
+            শিক্ষামূলক
+          </h3>
 
-      <div class="benefit">
+          <p>
+            ব্যক্তিগত investment recommendation নয়।
+          </p>
 
-        <div class="benefit-icon">
-          🎯
         </div>
 
-        <h3>
-          Financial Literacy
-        </h3>
-
-        <p>
-          অর্থ ও বিনিয়োগ সম্পর্কে জ্ঞান বাড়ানোর লক্ষ্য।
-        </p>
 
       </div>
-
 
     </div>
 
@@ -1045,54 +1537,60 @@ footer p{
     class="faq"
     id="faq">
 
-    <h2>
+    <h2 class="faq-title">
       ❓ সাধারণ প্রশ্ন
     </h2>
 
 
-    <div class="faq-item">
+    <details>
 
-      <h3>
+      <summary>
         InvestBangla কী?
-      </h3>
+      </summary>
 
       <p>
+
         InvestBangla হলো Investment ও Personal Finance
         সম্পর্কিত বইয়ের গুরুত্বপূর্ণ ধারণা সহজ বাংলায়
         শেখার একটি শিক্ষামূলক প্ল্যাটফর্ম।
+
       </p>
 
-    </div>
+    </details>
 
 
-    <div class="faq-item">
+    <details>
 
-      <h3>
-        InvestBangla কি বিনিয়োগের পরামর্শ দেয়?
-      </h3>
+      <summary>
+        InvestBangla কি investment advice দেয়?
+      </summary>
 
       <p>
+
         না। InvestBangla-এর বিষয়বস্তু শুধুমাত্র
-        শিক্ষামূলক। এটি ব্যক্তিগত financial advice
-        বা নির্দিষ্ট investment recommendation নয়।
+        শিক্ষামূলক। এটি ব্যক্তিগত financial advice,
+        stock tip বা নির্দিষ্ট buy/sell recommendation নয়।
+
       </p>
 
-    </div>
+    </details>
 
 
-    <div class="faq-item">
+    <details>
 
-      <h3>
-        এখানে কী ধরনের বই পাওয়া যাবে?
-      </h3>
+      <summary>
+        এখানে কী ধরনের বই থাকবে?
+      </summary>
 
       <p>
+
         Investment, Personal Finance, Financial Psychology
         এবং দীর্ঘমেয়াদি বিনিয়োগ সম্পর্কিত বইয়ের
-        বাংলা সারাংশ এখানে প্রকাশ করা হবে।
+        বাংলা educational summaries প্রকাশ করা হবে।
+
       </p>
 
-    </div>
+    </details>
 
 
   </section>
@@ -1103,17 +1601,22 @@ footer p{
 
   <div class="disclaimer">
 
-    <strong>⚠️ শিক্ষামূলক সতর্কতা:</strong><br><br>
+    <strong>
+      ⚠️ গুরুত্বপূর্ণ শিক্ষামূলক সতর্কতা
+    </strong>
+
+    <br><br>
 
     InvestBangla-এর সমস্ত বিষয়বস্তু শুধুমাত্র
-    শিক্ষামূলক উদ্দেশ্যে প্রকাশ করা হয়।
+    educational purposes-এর জন্য।
 
     এটি কোনো ব্যক্তিগত financial advice,
-    investment recommendation, stock tip বা
-    buy/sell signal নয়।
+    investment recommendation, stock tip,
+    buy/sell signal বা guaranteed return-এর
+    দাবি নয়।
 
-    বিনিয়োগের আগে নিজের গবেষণা করুন এবং প্রয়োজনে
-    যোগ্য ও SEBI-নিবন্ধিত financial professional-এর
+    বিনিয়োগের আগে নিজের গবেষণা করুন এবং
+    প্রয়োজনে যোগ্য financial professional-এর
     পরামর্শ নিন।
 
   </div>
@@ -1123,7 +1626,7 @@ footer p{
 
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -1136,12 +1639,18 @@ footer p{
   </p>
 
   <p>
+    Learn • Understand • Invest Responsibly
+  </p>
+
+  <p>
     © 2026 InvestBangla
   </p>
 
 </footer>
 
 
+
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
 
@@ -1154,10 +1663,17 @@ function searchBooks(){
       .toLowerCase()
       .trim();
 
+
   const books =
     document.querySelectorAll(".book");
 
+
+  const noResults =
+    document.getElementById("noResults");
+
+
   let found = 0;
+
 
   books.forEach(function(book){
 
@@ -1166,9 +1682,11 @@ function searchBooks(){
         .getAttribute("data-search")
         .toLowerCase();
 
+
     if(text.includes(input)){
 
       book.style.display = "block";
+
       found++;
 
     }else{
@@ -1179,9 +1697,6 @@ function searchBooks(){
 
   });
 
-
-  const noResults =
-    document.getElementById("noResults");
 
   if(found === 0){
 
@@ -1199,4 +1714,4 @@ function searchBooks(){
 
 
 </body>
-</html>
+        </html>
