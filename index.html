@@ -812,90 +812,24 @@ document
 ========================= */
 
 function openBook(index) {
+  const book = books[index];
 
-  const book =
-    books[index];
+  if (book.title === "The Psychology of Money") {
+    window.location.href = "psychology-of-money.html";
+    return;
+  }
 
-
-  document
-    .getElementById("modalTitle")
-    .textContent =
-      book.bn;
-
-
-  document
-    .getElementById("modalAuthor")
-    .textContent =
-      `${book.title} — ${book.author}`;
-
-
-  let html = `
-
-    <p>
-      ${escapeHtml(book.intro)}
-    </p>
-
-    <h3>
-      💡 মূল শিক্ষা
-    </h3>
-
+  modalTitle.textContent = book.title;
+  modalAuthor.textContent = "লেখক: " + book.author;
+  modalContent.innerHTML = `
+    <p>${escapeHtml(book.intro)}</p>
+    <h3>মূল শিক্ষা</h3>
+    <ul>
+      ${book.lessons.map(lesson => `<li>${escapeHtml(lesson)}</li>`).join("")}
+    </ul>
   `;
 
-
-  book.lessons.forEach(
-    (lesson, number) => {
-
-      html += `
-
-        <div class="lesson">
-
-          <strong>
-            ${number + 1}.
-            ${escapeHtml(lesson[0])}
-          </strong>
-
-          <br>
-
-          ${escapeHtml(lesson[1])}
-
-        </div>
-
-      `;
-
-    }
-  );
-
-
-  html += `
-
-    <h3>
-      📌 মনে রাখুন
-    </h3>
-
-    <p>
-      এই summary বইটির ধারণাগুলো
-      সহজভাবে বোঝানোর জন্য তৈরি।
-      এটি মূল বইয়ের বিকল্প নয় এবং
-      কোনও ব্যক্তিগত বিনিয়োগের পরামর্শ নয়।
-    </p>
-
-  `;
-
-
-  document
-    .getElementById("modalBody")
-    .innerHTML =
-      html;
-
-
-  document
-    .getElementById("modal")
-    .style.display =
-      "block";
-
-
-  document.body.style.overflow =
-    "hidden";
+  modal.classList.add("show");
 }
 
 
