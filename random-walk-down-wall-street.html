@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>A Random Walk Down Wall Street বাংলা সারাংশ | InvestBangla</title>
+
+<meta name="description" content="Burton G. Malkiel-এর A Random Walk Down Wall Street বইটির বাংলা শিক্ষামূলক সারাংশ। বাজার, diversification, index investing, risk ও long-term investing-এর গুরুত্বপূর্ণ ধারণা সহজ বাংলায়।">
+
+<meta name="keywords" content="A Random Walk Down Wall Street Bengali, Burton Malkiel Bengali, index investing Bengali, stock market Bengali, diversification Bengali, long term investing Bengali, InvestBangla">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mahatodeepak.github.io/InvestBangla/random-walk-down-wall-street.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="A Random Walk Down Wall Street — বাংলা সারাংশ">
+<meta property="og:description" content="Index investing, diversification, market efficiency এবং long-term investing-এর গুরুত্বপূর্ণ ধারণা সহজ বাংলায়।">
+<meta property="og:url" content="https://mahatodeepak.github.io/InvestBangla/random-walk-down-wall-street.html">
+
+<style>
+
+:root{
+--bg:#f5f7fb;
+--surface:#ffffff;
+--surface2:#f8fafc;
+--text:#172033;
+--muted:#667085;
+--border:#e4e7ec;
+--accent:#10b981;
+--accent2:#0ea5e9;
+--shadow:0 12px 35px rgba(15,23,42,.08);
+}
+
+body.dark{
+--bg:#080d19;
+--surface:#111827;
+--surface2:#172033;
+--text:#f8fafc;
+--muted:#aab4c5;
+--border:#263247;
+--shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,
+"Noto Sans Bengali","Noto Sans",sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.85;
+transition:.25s;
+}
+
+#progress{
+position:fixed;
+top:0;
+left:0;
+width:0;
+height:4px;
+background:linear-gradient(90deg,var(--accent),var(--accent2));
+z-index:99999;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:5000;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+max-width:1150px;
+margin:auto;
+padding:12px 18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+font-size:22px;
+font-weight:900;
+color:#fff;
+text-decoration:none;
+}
+
+.logo span{
+color:#6ee7b7;
+}
+
+.controls{
+display:flex;
+gap:6px;
+}
+
+.control{
+border:1px solid rgba(255,255,255,.15);
+background:rgba(255,255,255,.08);
+color:#fff;
+border-radius:9px;
+padding:7px 10px;
+cursor:pointer;
+font-size:13px;
+}
+
+/* HERO */
+
+.hero{
+padding:70px 20px 85px;
+color:#fff;
+background:
+radial-gradient(circle at 15% 20%,rgba(16,185,129,.25),transparent 30%),
+radial-gradient(circle at 85% 75%,rgba(14,165,233,.25),transparent 30%),
+linear-gradient(135deg,#0f172a,#064e3b,#082f49);
+}
+
+.hero-inner{
+max-width:950px;
+margin:auto;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:6px 14px;
+border:1px solid rgba(110,231,183,.4);
+border-radius:999px;
+color:#a7f3d0;
+background:rgba(16,185,129,.08);
+font-size:12px;
+font-weight:800;
+margin-bottom:18px;
+}
+
+.hero h1{
+font-size:clamp(34px,7vw,64px);
+line-height:1.1;
+letter-spacing:-2px;
+margin-bottom:18px;
+}
+
+.hero h1 span{
+color:#6ee7b7;
+}
+
+.hero p{
+max-width:780px;
+margin:auto;
+color:#d1d5db;
+font-size:17px;
+}
+
+.meta{
+margin-top:28px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.meta span{
+padding:7px 12px;
+border-radius:10px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.1);
+font-size:13px;
+}
+
+/* READING BAR */
+
+.reading-bar{
+max-width:1000px;
+margin:-25px auto 0;
+position:relative;
+z-index:5;
+background:var(--surface);
+border:1px solid var(--border);
+box-shadow:var(--shadow);
+border-radius:18px;
+padding:16px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+.reading-info{
+font-size:13px;
+color:var(--muted);
+}
+
+.reading-info strong{
+color:var(--text);
+}
+
+.save-btn{
+border:1px solid var(--border);
+background:var(--surface2);
+color:var(--text);
+border-radius:10px;
+padding:8px 12px;
+cursor:pointer;
+}
+
+/* MAIN */
+
+main{
+max-width:1000px;
+margin:auto;
+padding:35px 20px 80px;
+}
+
+.toolbar{
+display:flex;
+gap:8px;
+margin-bottom:30px;
+flex-wrap:wrap;
+}
+
+.search{
+flex:1;
+min-width:200px;
+padding:13px 15px;
+border:1px solid var(--border);
+border-radius:12px;
+background:var(--surface);
+color:var(--text);
+font-size:15px;
+outline:none;
+}
+
+.tool{
+border:1px solid var(--border);
+background:var(--surface);
+color:var(--text);
+border-radius:12px;
+padding:11px 13px;
+cursor:pointer;
+}
+
+/* TOC */
+
+.toc{
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:18px;
+padding:23px;
+margin-bottom:25px;
+box-shadow:var(--shadow);
+}
+
+.toc h2{
+font-size:20px;
+margin-bottom:12px;
+}
+
+.toc-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:7px;
+}
+
+.toc a{
+text-decoration:none;
+color:var(--muted);
+padding:7px 10px;
+border-radius:8px;
+}
+
+.toc a:hover{
+background:var(--surface2);
+color:var(--accent);
+}
+
+/* SECTION */
+
+.section{
+background:var(--surface);
+border:1px solid var(--border);
+border-radius:20px;
+padding:30px;
+margin-bottom:24px;
+box-shadow:var(--shadow);
+}
+
+.section h2{
+font-size:27px;
+line-height:1.35;
+margin-bottom:15px;
+}
+
+.section h2:before{
+content:"";
+display:inline-block;
+width:5px;
+height:28px;
+background:var(--accent);
+border-radius:8px;
+margin-right:10px;
+vertical-align:-4px;
+}
+
+.section h3{
+font-size:20px;
+margin:23px 0 7px;
+}
+
+.section p{
+color:var(--muted);
+margin-bottom:12px;
+}
+
+.highlight{
+background:rgba(16,185,129,.08);
+border-left:4px solid var(--accent);
+padding:18px;
+border-radius:10px;
+margin:18px 0;
+}
+
+.highlight strong{
+color:var(--text);
+}
+
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+}
+
+.card{
+background:var(--surface2);
+border:1px solid var(--border);
+padding:20px;
+border-radius:15px;
+}
+
+.card-number{
+width:34px;
+height:34px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:var(--accent);
+color:white;
+font-weight:900;
+margin-bottom:9px;
+}
+
+.card h3{
+margin:0 0 5px;
+font-size:18px;
+}
+
+.card p{
+font-size:14px;
+margin:0;
+}
+
+/* CHECKLIST */
+
+.check{
+display:flex;
+gap:10px;
+padding:12px 0;
+border-bottom:1px solid var(--border);
+}
+
+.check:last-child{
+border:0;
+}
+
+.check-icon{
+color:var(--accent);
+font-weight:bold;
+}
+
+/* CALCULATOR */
+
+.calculator{
+background:linear-gradient(135deg,var(--surface2),var(--surface));
+border:1px solid var(--border);
+border-radius:18px;
+padding:22px;
+}
+
+.input-group{
+margin:12px 0;
+}
+
+.input-group label{
+display:block;
+font-size:13px;
+color:var(--muted);
+margin-bottom:5px;
+}
+
+.input-group input,
+.input-group select{
+width:100%;
+padding:12px;
+border-radius:10px;
+border:1px solid var(--border);
+background:var(--surface);
+color:var(--text);
+font-size:16px;
+}
+
+.calc-btn{
+margin-top:10px;
+width:100%;
+padding:13px;
+border:0;
+border-radius:11px;
+background:var(--accent);
+color:white;
+font-weight:900;
+cursor:pointer;
+}
+
+.result{
+margin-top:15px;
+padding:15px;
+background:rgba(16,185,129,.1);
+border-radius:10px;
+display:none;
+}
+
+/* FAQ */
+
+details{
+border-bottom:1px solid var(--border);
+padding:15px 0;
+}
+
+details:last-child{
+border:0;
+}
+
+summary{
+cursor:pointer;
+font-weight:800;
+}
+
+details p{
+margin-top:8px;
+}
+
+/* NAV */
+
+.book-nav{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:10px;
+margin-top:30px;
+}
+
+.book-nav a{
+text-decoration:none;
+text-align:center;
+padding:14px;
+background:var(--surface);
+border:1px solid var(--border);
+color:var(--text);
+border-radius:12px;
+font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+background:#080d19;
+color:#94a3b8;
+text-align:center;
+padding:38px 20px;
+}
+
+footer strong{
+color:white;
+}
+
+footer p{
+font-size:13px;
+margin:4px;
+}
+
+/* TOP */
+
+#top{
+position:fixed;
+right:18px;
+bottom:18px;
+width:44px;
+height:44px;
+border:0;
+border-radius:50%;
+background:var(--accent);
+color:white;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+display:none;
+z-index:999;
+}
+
+body.large-text{
+font-size:18px;
+}
+
+body.large-text .section p{
+font-size:17px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.nav{
+padding:10px 13px;
+}
+
+.logo{
+font-size:19px;
+}
+
+.control{
+padding:6px 8px;
+font-size:12px;
+}
+
+.hero{
+padding:55px 17px 70px;
+}
+
+.hero h1{
+letter-spacing:-1px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.reading-bar{
+margin:-22px 13px 0;
+padding:13px;
+}
+
+main{
+padding:28px 13px 60px;
+}
+
+.section{
+padding:21px;
+border-radius:16px;
+}
+
+.section h2{
+font-size:23px;
+}
+
+.grid,
+.toc-grid{
+grid-template-columns:1fr;
+}
+
+.book-nav{
+grid-template-columns:1fr;
+}
+
+.toolbar{
+position:sticky;
+top:57px;
+z-index:100;
+padding:7px 0;
+background:var(--bg);
+}
+
+}
+
+/* PRINT */
+
+@media print{
+
+header,
+.toolbar,
+.reading-bar,
+#top,
+.book-nav{
+display:none;
+}
+
+.hero{
+background:none;
+color:#000;
+padding:20px;
+}
+
+.hero p{
+color:#333;
+}
+
+.section{
+box-shadow:none;
+break-inside:avoid;
+}
+
+}
+
+</style>
+
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"headline":"A Random Walk Down Wall Street বাংলা সারাংশ",
+"description":"Burton G. Malkiel-এর A Random Walk Down Wall Street বইটির বাংলা শিক্ষামূলক সারাংশ।",
+"author":{
+"@type":"Person",
+"name":"Burton G. Malkiel"
+},
+"publisher":{
+"@type":"Organization",
+"name":"InvestBangla"
+},
+"mainEntityOfPage":{
+"@type":"WebPage",
+"@id":"https://mahatodeepak.github.io/InvestBangla/random-walk-down-wall-street.html"
+}
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{
+"@type":"Question",
+"name":"A Random Walk Down Wall Street বইটি কী নিয়ে?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"বইটি stock market, market efficiency, diversification, index investing এবং দীর্ঘমেয়াদি বিনিয়োগের বিভিন্ন ধারণা নিয়ে আলোচনা করে।"
+}
+},
+{
+"@type":"Question",
+"name":"Index investing কী?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Index investing হলো একটি নির্দিষ্ট market index-এর performance অনুসরণ করার লক্ষ্য নিয়ে diversified portfolio বা index fund-এর মাধ্যমে বিনিয়োগের একটি পদ্ধতি।"
+}
+},
+{
+"@type":"Question",
+"name":"এই সারাংশ কি investment advice?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"না। এটি শুধুমাত্র শিক্ষামূলক বই-সারাংশ।"
+}
+}
+]
+}
+</script>
+
+</head>
+
+
+<body>
+
+<div id="progress"></div>
+
+
+<header>
+
+<div class="nav">
+
+<a href="index.html" class="logo">
+Invest<span>Bangla</span>
+</a>
+
+<div class="controls">
+
+<button class="control" onclick="changeFont()">A+</button>
+
+<button class="control" onclick="toggleTheme()">🌙</button>
+
+<button class="control" onclick="sharePage()">↗</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-inner">
+
+<div class="badge">
+BOOK 09 • MARKET & INDEX INVESTING
+</div>
+
+<h1>
+A Random Walk Down<br>
+<span>Wall Street</span>
+</h1>
+
+<p>
+Burton G. Malkiel-এর market, diversification,
+index investing এবং long-term investing-এর
+গুরুত্বপূর্ণ ধারণাগুলি সহজ বাংলায়।
+</p>
+
+<div class="meta">
+
+<span>✍️ Burton G. Malkiel</span>
+<span>🇧🇩 বাংলা</span>
+<span>📊 Index Investing</span>
+<span>⏱️ ~12 min</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<div class="reading-bar">
+
+<div class="reading-info">
+
+পড়া হয়েছে:
+<strong id="percent">0%</strong>
+
+&nbsp; • &nbsp;
+
+সময়:
+<strong>~12 মিনিট</strong>
+
+</div>
+
+<button class="save-btn" onclick="saveProgress()" id="saveBtn">
+🔖 Save
+</button>
+
+</div>
+
+
+<main>
+
+
+<div class="toolbar">
+
+<input
+id="search"
+class="search"
+type="search"
+placeholder="এই বইয়ের সারাংশে খুঁজুন..."
+oninput="searchContent()"
+>
+
+<button class="tool" onclick="copySummary()">📋 Copy</button>
+
+<button class="tool" onclick="window.print()">🖨️</button>
+
+</div>
+
+
+<section class="toc">
+
+<h2>🧭 Quick Navigation</h2>
+
+<div class="toc-grid">
+
+<a href="#intro">📖 মূল ধারণা</a>
+<a href="#market">📊 Market Theory</a>
+<a href="#index">📈 Index Investing</a>
+<a href="#diversification">🛡️ Diversification</a>
+<a href="#strategy">🧠 Investor Strategy</a>
+<a href="#check">✅ Portfolio Check</a>
+<a href="#calculator">🧮 Calculator</a>
+<a href="#faq">❓ FAQ</a>
+
+</div>
+
+</section>
+
+
+<section class="section" id="intro">
+
+<h2>📖 বইটির মূল ধারণা</h2>
+
+<p>
+A Random Walk Down Wall Street-এর একটি কেন্দ্রীয়
+আলোচনা হলো stock market-এর ভবিষ্যৎ movement নিয়মিতভাবে
+অনুমান করা কতটা কঠিন।
+</p>
+
+<p>
+বাজারে অসংখ্য professional investor, analyst এবং trader
+একই সঙ্গে তথ্য বিশ্লেষণ করে। তাই ধারাবাহিকভাবে market-এর
+চেয়ে ভালো performance করা সহজ নয়।
+</p>
+
+<div class="highlight">
+
+<strong>সহজ শিক্ষা:</strong><br>
+
+দ্রুত market prediction-এর ওপর পুরো strategy নির্ভর না করে
+diversification, low cost এবং দীর্ঘমেয়াদি discipline-এর
+দিকে গুরুত্ব দেওয়া যেতে পারে।
+
+</div>
+
+</section>
+
+
+<section class="section" id="market">
+
+<h2>📊 Market সম্পর্কে গুরুত্বপূর্ণ ধারণা</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="card-number">1</div>
+<h3>Market Prediction কঠিন</h3>
+<p>
+স্বল্পমেয়াদে market কোন দিকে যাবে তা ধারাবাহিকভাবে
+সঠিকভাবে অনুমান করা অত্যন্ত কঠিন।
+</p>
+</div>
+
+<div class="card">
+<div class="card-number">2</div>
+<h3>Information Matters</h3>
+<p>
+বাজারে প্রকাশিত তথ্য দ্রুত বিভিন্ন investor-এর
+সিদ্ধান্তে প্রভাব ফেলতে পারে।
+</p>
+</div>
+
+<div class="card">
+<div class="card-number">3</div>
+<h3>Random Movement</h3>
+<p>
+স্বল্পমেয়াদি price movement অনেক সময় unpredictable
+বা random-এর মতো আচরণ করতে পারে।
+</p>
+</div>
+
+<div class="card">
+<div class="card-number">4</div>
+<h3>Past Performance</h3>
+<p>
+অতীতের ভালো performance ভবিষ্যতে একই ফলাফলের
+নিশ্চয়তা দেয় না।
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="index">
+
+<h2>📈 Index Investing</h2>
+
+<p>
+Index investing-এর ধারণা হলো পুরো market বা একটি
+নির্দিষ্ট market segment-এর performance অনুসরণ করার
+চেষ্টা করা, প্রতিটি individual stock বেছে নেওয়ার বদলে।
+</p>
+
+<h3>কেন এটি আকর্ষণীয় হতে পারে?</h3>
+
+<div class="check">
+<span class="check-icon">✓</span>
+<span>একসঙ্গে অনেক কোম্পানিতে diversification পাওয়া যেতে পারে।</span>
+</div>
+
+<div class="check">
+<span class="check-icon">✓</span>
+<span>অতিরিক্ত stock-picking-এর প্রয়োজন কমতে পারে।</span>
+</div>
+
+<div class="check">
+<span class="check-icon">✓</span>
+<span>কম খরচের fund বা index product ব্যবহার করা সম্ভব হতে পারে।</span>
+</div>
+
+<div class="check">
+<span class="check-icon">✓</span>
+<span>দীর্ঘমেয়াদি disciplined strategy তৈরি করা সহজ হতে পারে।</span>
+</div>
+
+<div class="highlight">
+
+<strong>মনে রাখুন:</strong>
+
+Index বা diversified investment-ও market risk থেকে মুক্ত নয়।
+Market পড়লে portfolio-র value কমতে পারে।
+
+</div>
+
+</section>
+
+
+<section class="section" id="diversification">
+
+<h2>🛡️ Diversification কেন গুরুত্বপূর্ণ?</h2>
+
+<p>
+একটি মাত্র কোম্পানি বা asset-এর ওপর পুরো portfolio নির্ভর
+করলে সেই asset-এর সমস্যা পুরো portfolio-কে বড়ভাবে
+প্রভাবিত করতে পারে।
+</p>
+
+<p>
+বিভিন্ন কোম্পানি, sector এবং প্রয়োজন অনুযায়ী বিভিন্ন
+asset class-এ exposure ছড়িয়ে দিলে নির্দিষ্ট ঝুঁকি
+কিছুটা কমানো যেতে পারে।
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Single Stock</h3>
+<p>
+একটি কোম্পানির ওপর বেশি নির্ভরতা।
+Company-specific risk বেশি।
+</p>
+</div>
+
+<div class="card">
+<h3>Diversified Portfolio</h3>
+<p>
+বিভিন্ন holdings-এর মাধ্যমে নির্দিষ্ট কোম্পানির
+ঝুঁকি ছড়িয়ে দেওয়ার চেষ্টা।
+</p>
+</div>
+
+<div class="card">
+<h3>Asset Allocation</h3>
+<p>
+Equity, debt, cash বা অন্যান্য asset-এর মধ্যে
+নিজের লক্ষ্য অনুযায়ী allocation বিবেচনা করা।
+</p>
+</div>
+
+<div class="card">
+<h3>Rebalancing</h3>
+<p>
+সময়ের সঙ্গে portfolio allocation পরিবর্তিত হলে
+লক্ষ্য allocation-এর দিকে পুনরায় সামঞ্জস্য করার প্রক্রিয়া।
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="strategy">
+
+<h2>🧠 Investor Strategy</h2>
+
+<h3>1. Long-Term Perspective</h3>
+
+<p>
+স্বল্পমেয়াদি market volatility-এর পরিবর্তে দীর্ঘ সময়ের
+financial goal-এর দিকে নজর দেওয়া অনেক investor-এর জন্য
+উপকারী হতে পারে।
+</p>
+
+<h3>2. Costs বিবেচনা করুন</h3>
+
+<p>
+Fees, expense এবং transaction costs দীর্ঘ সময়ে
+investment return-এর ওপর প্রভাব ফেলতে পারে।
+</p>
+
+<h3>3. Emotion নিয়ন্ত্রণ করুন</h3>
+
+<p>
+Market বাড়লে অতিরিক্ত confidence এবং market পড়লে
+panic—দুই ধরনের emotion-ই সিদ্ধান্তকে প্রভাবিত করতে পারে।
+</p>
+
+<h3>4. নিজের Risk বোঝুন</h3>
+
+<p>
+আপনি কতটা loss সহ্য করতে পারবেন এবং কখন সেই টাকা
+প্রয়োজন হবে—এসব portfolio strategy নির্ধারণে গুরুত্বপূর্ণ।
+</p>
+
+</section>
+
+
+<section class="section" id="check">
+
+<h2>✅ Portfolio Self-Check</h2>
+
+<p>
+আপনার investment approach সম্পর্কে একটি সাধারণ
+self-check করুন।
+</p>
+
+<div class="score-box">
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমার investment-এর উদ্দেশ্য পরিষ্কার
+</label>
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমি diversification বিবেচনা করেছি
+</label>
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমি investment cost বুঝি
+</label>
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমি market volatility-এর জন্য প্রস্তুত
+</label>
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমার time horizon পরিষ্কার
+</label>
+
+<label class="option">
+<input type="checkbox" class="portfolioCheck">
+আমি panic buying/selling এড়ানোর চেষ্টা করি
+</label>
+
+<button class="calc-btn" onclick="checkPortfolio()">
+Check Score
+</button>
+
+<div id="portfolioResult" class="result"></div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="calculator">
+
+<h2>🧮 Compound Growth Illustration</h2>
+
+<p>
+এই calculator শুধুমাত্র compound growth বোঝানোর
+জন্য। কোনো market return-এর নিশ্চয়তা বোঝায় না।
+</p>
+
+<div class="calculator">
+
+<div class="input-group">
+
+<label>Initial Investment (₹)</label>
+
+<input
+id="principal"
+type="number"
+placeholder="যেমন 100000"
+>
+
+</div>
+
+<div class="input-group">
+
+<label>Annual Return (%)</label>
+
+<input
+id="rate"
+type="number"
+step="0.1"
+placeholder="যেমন 8"
+>
+
+</div>
+
+<div class="input-group">
+
+<label>Time (Years)</label>
+
+<input
+id="years"
+type="number"
+placeholder="যেমন 15"
+>
+
+</div>
+
+<button class="calc-btn" onclick="calculateGrowth()">
+Calculate
+</button>
+
+<div id="growthResult" class="result"></div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>⚠️ Market Reality</h2>
+
+<p>
+Diversification risk কমাতে সাহায্য করতে পারে, কিন্তু
+কোনো diversified portfolio-ই guaranteed profit দেয় না।
+</p>
+
+<p>
+Equity market-এ বড় price fluctuations হতে পারে।
+তাই investment decision নেওয়ার আগে liquidity needs,
+time horizon এবং risk tolerance বিবেচনা করা গুরুত্বপূর্ণ।
+</p>
+
+<div class="highlight">
+
+<strong>Long-term mindset:</strong><br>
+
+Market volatility-কে সম্পূর্ণ এড়ানো সবসময় সম্ভব নয়;
+বরং নিজের financial plan-এর সঙ্গে সামঞ্জস্য রেখে
+volatility মোকাবিলা করার প্রস্তুতি গুরুত্বপূর্ণ।
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>⚡ ১০টি Key Takeaway</h2>
+
+<p>✅ Market timing ধারাবাহিকভাবে করা কঠিন।</p>
+
+<p>✅ Short-term price movement unpredictable হতে পারে।</p>
+
+<p>✅ Diversification গুরুত্বপূর্ণ।</p>
+
+<p>✅ Index investing একটি passive approach হতে পারে।</p>
+
+<p>✅ Investment cost বিবেচনা করুন।</p>
+
+<p>✅ Past performance future guarantee নয়।</p>
+
+<p>✅ Emotion-based decisions এড়ানোর চেষ্টা করুন।</p>
+
+<p>✅ নিজের risk tolerance বুঝুন।</p>
+
+<p>✅ Long-term financial goals মাথায় রাখুন।</p>
+
+<p>✅ কোনো strategy-ই risk-free নয়।</p>
+
+</section>
+
+
+<section class="section" id="faq">
+
+<h2>❓ Frequently Asked Questions</h2>
+
+<details>
+
+<summary>A Random Walk Down Wall Street বইটি কী নিয়ে?</summary>
+
+<p>
+বইটি stock market, market efficiency, diversification,
+index investing এবং দীর্ঘমেয়াদি investing-এর বিভিন্ন
+ধারণা নিয়ে।
+</p>
+
+</details>
+
+<details>
+
+<summary>Random Walk বলতে কী বোঝায়?</summary>
+
+<p>
+এখানে ধারণাটি হলো short-term stock price movement
+নির্ভরযোগ্যভাবে predict করা খুব কঠিন এবং অতীত price
+movement থেকে ভবিষ্যৎ movement নিশ্চিতভাবে জানা যায় না।
+</p>
+
+</details>
+
+<details>
+
+<summary>Index investing কি risk-free?</summary>
+
+<p>
+না। Index investment market risk-এর সঙ্গে যুক্ত।
+Market decline হলে index-based investment-এর value-ও
+কমতে পারে।
+</p>
+
+</details>
+
+<details>
+
+<summary>Diversification কি loss বন্ধ করে?</summary>
+
+<p>
+না। Diversification নির্দিষ্ট কোম্পানি বা asset-এর
+ঝুঁকি ছড়াতে সাহায্য করতে পারে, কিন্তু overall market
+loss প্রতিরোধের নিশ্চয়তা দেয় না।
+</p>
+
+</details>
+
+<details>
+
+<summary>এই পেজ কি investment advice?</summary>
+
+<p>
+না। এটি শুধুমাত্র শিক্ষামূলক বই-সারাংশ।
+কোনো নির্দিষ্ট financial product বা stock কেনার
+recommendation এখানে দেওয়া হয়নি।
+</p>
+
+</details>
+
+</section>
+
+
+<section class="section">
+
+<h2>⚠️ Educational Disclaimer</h2>
+
+<p>
+এই পেজটি শুধুমাত্র শিক্ষামূলক উদ্দেশ্যে তৈরি।
+এটি ব্যক্তিগত financial, investment, tax বা legal advice নয়।
+</p>
+
+<p>
+Calculator-এর ফলাফল শুধুমাত্র mathematical illustration।
+বাস্তব market return পরিবর্তনশীল এবং capital loss হতে পারে।
+</p>
+
+<p>
+বইটির ধারণাগুলি InvestBangla-এর নিজস্ব ভাষায়
+শিক্ষামূলকভাবে ব্যাখ্যা করা হয়েছে; বইয়ের দীর্ঘ
+মূল লেখা পুনরুৎপাদন করা হয়নি।
+</p>
+
+</section>
+
+
+<div class="book-nav">
+
+<a href="common-stocks-uncommon-profits.html">
+← Previous
+</a>
+
+<a href="index.html">
+🏠 All Books
+</a>
+
+<a href="millionaire-next-door.html">
+Next →
+</a>
+
+</div>
+
+</main>
+
+
+<footer>
+
+<p><strong>InvestBangla</strong></p>
+
+<p>
+বাংলা ভাষায় বইয়ের সারাংশ ও আর্থিক শিক্ষার প্ল্যাটফর্ম।
+</p>
+
+<p>
+© 2026 InvestBangla • Educational Content
+</p>
+
+</footer>
+
+
+<button id="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+↑
+</button>
+
+
+<script>
+
+/* THEME */
+
+function toggleTheme(){
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem(
+"investbangla-theme",
+document.body.classList.contains("dark")
+?"dark":"light"
+);
+
+}
+
+if(localStorage.getItem("investbangla-theme")==="dark"){
+document.body.classList.add("dark");
+}
+
+
+/* FONT */
+
+function changeFont(){
+
+document.body.classList.toggle("large-text");
+
+localStorage.setItem(
+"investbangla-font",
+document.body.classList.contains("large-text")
+?"large":"normal"
+);
+
+}
+
+if(localStorage.getItem("investbangla-font")==="large"){
+document.body.classList.add("large-text");
+}
+
+
+/* READING PROGRESS */
+
+window.addEventListener("scroll",function(){
+
+let top=document.documentElement.scrollTop;
+
+let height=
+document.documentElement.scrollHeight-
+document.documentElement.clientHeight;
+
+let percent=
+height>0
+?Math.round(top/height*100)
+:0;
+
+document.getElementById("progress").style.width=
+percent+"%";
+
+document.getElementById("percent").innerText=
+percent+"%";
+
+document.getElementById("top").style.display=
+top>500?"block":"none";
+
+});
+
+
+/* SAVE */
+
+function saveProgress(){
+
+localStorage.setItem(
+"random-walk-progress",
+window.scrollY
+);
+
+document.getElementById("saveBtn").innerText="✓ Saved";
+
+setTimeout(function(){
+
+document.getElementById("saveBtn").innerText="🔖 Save";
+
+},1500);
+
+}
+
+
+/* SHARE */
+
+function sharePage(){
+
+let data={
+title:document.title,
+text:"A Random Walk Down Wall Street বাংলা সারাংশ — InvestBangla",
+url:window.location.href
+};
+
+if(navigator.share){
+
+navigator.share(data).catch(()=>{});
+
+}else{
+
+navigator.clipboard.writeText(window.location.href);
+
+alert("লিংক কপি হয়েছে!");
+
+}
+
+}
+
+
+/* COPY */
+
+function copySummary(){
+
+let text=document.querySelector("main").innerText;
+
+navigator.clipboard.writeText(text)
+.then(function(){
+
+alert("সারাংশ কপি হয়েছে!");
+
+})
+.catch(function(){
+
+alert("Copy করা যায়নি।");
+
+});
+
+}
+
+
+/* SEARCH */
+
+function searchContent(){
+
+let query=
+document.getElementById("search")
+.value.toLowerCase()
+.trim();
+
+let sections=
+document.querySelectorAll(".section");
+
+sections.forEach(function(section){
+
+let text=
+section.innerText.toLowerCase();
+
+section.style.display=
+!query || text.includes(query)
+?"":"none";
+
+});
+
+}
+
+
+/* PORTFOLIO CHECK */
+
+function checkPortfolio(){
+
+let checks=
+document.querySelectorAll(".portfolioCheck");
+
+let total=checks.length;
+let done=0;
+
+checks.forEach(function(item){
+
+if(item.checked){
+done++;
+}
+
+});
+
+let result=
+document.getElementById("portfolioResult");
+
+result.style.display="block";
+
+let percent=
+Math.round(done/total*100);
+
+let message="";
+
+if(percent>=80){
+
+message=
+"ভালো! আপনার basic portfolio checklist বেশিরভাগই কভার হয়েছে।";
+
+}else if(percent>=50){
+
+message=
+"ভালো শুরু। যেসব বিষয় বাকি আছে সেগুলিও review করুন।";
+
+}else{
+
+message=
+"আপনার investment plan নিয়ে আরও basic research ও planning দরকার।";
+
+}
+
+result.innerHTML=
+"<strong>Score: "+done+"/"+total+
+" ("+percent+"%)</strong><br>"+message;
+
+}
+
+
+/* COMPOUND GROWTH */
+
+function calculateGrowth(){
+
+let principal=
+Number(document.getElementById("principal").value);
+
+let rate=
+Number(document.getElementById("rate").value);
+
+let years=
+Number(document.getElementById("years").value);
+
+let result=
+document.getElementById("growthResult");
+
+if(
+principal<=0 ||
+rate<0 ||
+years<=0
+){
+
+result.style.display="block";
+
+result.innerHTML=
+"দয়া করে সঠিক তথ্য দিন।";
+
+return;
+
+}
+
+let future=
+principal*Math.pow(
+1+rate/100,
+years
+);
+
+let gain=future-principal;
+
+result.style.display="block";
+
+result.innerHTML=
+"<strong>Illustrative Value:</strong> ₹"+
+future.toLocaleString("en-IN",{
+maximumFractionDigits:0
+})+
+"<br>Illustrative Growth: ₹"+
+gain.toLocaleString("en-IN",{
+maximumFractionDigits:0
+})+
+"<br><small>এই হিসাব constant annual return ধরে করা হয়েছে। বাস্তবে return guaranteed নয়।</small>";
+
+}
+
+
+/* SEARCH SHORTCUT */
+
+document.addEventListener("keydown",function(e){
+
+if(
+e.key==="/" &&
+document.activeElement.tagName!=="INPUT"
+){
+
+e.preventDefault();
+
+document.getElementById("search").focus();
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
