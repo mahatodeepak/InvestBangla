@@ -3,88 +3,16 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>InvestBangla | বিনিয়োগ ও Personal Finance বইয়ের বাংলা সারাংশ</title>
+<title>InvestBangla — সহজ বাংলায় Investment শেখার প্ল্যাটফর্ম</title>
 
-<meta name="description"
-content="The Psychology of Money, The Intelligent Investor, One Up on Wall Street সহ জনপ্রিয় বিনিয়োগ ও Personal Finance বইয়ের সহজ বাংলা সারাংশ ও গুরুত্বপূর্ণ শিক্ষা।">
-
-<meta name="keywords"
-content="বিনিয়োগ বই বাংলা, investment books Bengali, personal finance Bengali, The Psychology of Money Bengali, Intelligent Investor Bengali, Peter Lynch Bengali, Rich Dad Poor Dad Bengali">
-
-<meta name="author" content="InvestBangla">
+<meta name="description" content="জনপ্রিয় Investment ও Personal Finance বইয়ের সহজ বাংলা সারাংশ, গুরুত্বপূর্ণ শিক্ষা এবং financial literacy বিষয়ক শিক্ষামূলক কনটেন্ট।">
 
 <meta name="robots" content="index, follow">
 
 <link rel="canonical"
 href="https://mahatodeepak.github.io/InvestBangla/">
-
-<!-- Open Graph -->
-
-<meta property="og:title"
-content="InvestBangla | বিনিয়োগ বইয়ের বাংলা সারাংশ">
-
-<meta property="og:description"
-content="জনপ্রিয় Investment ও Personal Finance বইয়ের সহজ বাংলা সারাংশ।">
-
-<meta property="og:type" content="website">
-
-<meta property="og:url"
-content="https://mahatodeepak.github.io/InvestBangla/">
-
-<meta property="og:site_name"
-content="InvestBangla">
-
-
-<!-- Structured Data -->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "InvestBangla",
-  "url": "https://mahatodeepak.github.io/InvestBangla/",
-  "description": "বিনিয়োগ ও Personal Finance বইয়ের বাংলা সারাংশ",
-  "inLanguage": "bn"
-}
-</script>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "InvestBangla কী?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "InvestBangla হলো বিনিয়োগ ও Personal Finance সম্পর্কিত জনপ্রিয় বইয়ের গুরুত্বপূর্ণ ধারণা সহজ বাংলায় বোঝানোর একটি শিক্ষামূলক প্ল্যাটফর্ম।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "InvestBangla কি বিনিয়োগের পরামর্শ দেয়?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "না। InvestBangla-এর বিষয়বস্তু শুধুমাত্র শিক্ষামূলক। এটি ব্যক্তিগত financial advice বা নির্দিষ্ট investment recommendation নয়।"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "কোন ধরনের বই এখানে পাওয়া যাবে?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Investment, personal finance, financial psychology এবং দীর্ঘমেয়াদি বিনিয়োগ সম্পর্কিত জনপ্রিয় বইয়ের বাংলা সারাংশ এখানে প্রকাশ করা হবে।"
-      }
-    }
-  ]
-}
-</script>
-
 
 <style>
 
@@ -99,32 +27,33 @@ html{
 body{
   margin:0;
   font-family:
-    Arial,
     "Noto Sans Bengali",
-    "Noto Sans",
+    Arial,
     sans-serif;
-  background:#f8fafc;
+  background:#f4f7fb;
   color:#172033;
-  line-height:1.75;
+  line-height:1.7;
 }
 
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
-  background:#0b1324;
-  color:white;
-  border-bottom:1px solid #1e293b;
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(9,18,35,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.header-inner{
-  max-width:1100px;
+.header{
+  max-width:1150px;
   margin:auto;
-  padding:18px 20px;
+  padding:15px 20px;
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  gap:20px;
+  align-items:center;
 }
 
 .logo{
@@ -132,6 +61,7 @@ header{
   color:white;
   font-size:25px;
   font-weight:800;
+  letter-spacing:-.5px;
 }
 
 .logo span{
@@ -140,7 +70,7 @@ header{
 
 .nav{
   display:flex;
-  gap:20px;
+  gap:22px;
 }
 
 .nav a{
@@ -154,211 +84,306 @@ header{
 }
 
 
-/* HERO */
+/* ================= HERO ================= */
 
 .hero{
+  position:relative;
+  overflow:hidden;
   background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(59,130,246,.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(139,92,246,.30),
+      transparent 35%
+    ),
     linear-gradient(
-      180deg,
-      #0b1324 0%,
-      #14213d 100%
+      135deg,
+      #081225,
+      #14264a,
+      #111827
     );
   color:white;
-  text-align:center;
-  padding:65px 20px 70px;
 }
 
 .hero-inner{
-  max-width:850px;
+  max-width:1000px;
   margin:auto;
+  text-align:center;
+  padding:75px 20px 80px;
 }
 
-.badge{
-  display:inline-block;
-  background:#1e3a8a;
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:7px 14px;
+  border-radius:50px;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.15);
   color:#bfdbfe;
-  padding:6px 14px;
-  border-radius:30px;
   font-size:13px;
-  margin-bottom:15px;
+  margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:42px;
+  margin:0 auto 18px;
+  max-width:850px;
+  font-size:46px;
   line-height:1.25;
-  margin:0 0 18px;
+  letter-spacing:-1px;
 }
 
 .hero h1 span{
-  color:#60a5fa;
+  background:linear-gradient(
+    90deg,
+    #60a5fa,
+    #c4b5fd
+  );
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-.hero p{
+.hero-text{
   max-width:720px;
-  margin:0 auto;
+  margin:auto;
   color:#cbd5e1;
   font-size:17px;
 }
 
 
-/* SEARCH */
+/* ================= SEARCH ================= */
 
-.search-wrapper{
+.search{
   max-width:620px;
-  margin:30px auto 0;
+  margin:32px auto 0;
   position:relative;
 }
 
-.search-wrapper input{
+.search input{
   width:100%;
-  padding:16px 20px;
-  border:none;
-  border-radius:12px;
+  padding:17px 22px 17px 48px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:14px;
+  background:white;
+  color:#172033;
   font-size:16px;
   outline:none;
-  box-shadow:0 8px 25px rgba(0,0,0,.18);
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.25);
+}
+
+.search-icon{
+  position:absolute;
+  left:18px;
+  top:14px;
+  font-size:21px;
 }
 
 
-/* MAIN */
+/* ================= STATS ================= */
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:45px 20px;
+.stats{
+  max-width:950px;
+  margin:-30px auto 0;
+  position:relative;
+  z-index:5;
+  padding:0 20px;
 }
 
-.section-heading{
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.section-heading h2{
-  font-size:30px;
-  margin:0 0 8px;
-}
-
-.section-heading p{
-  color:#64748b;
-  margin:0;
-}
-
-
-/* BOOK GRID */
-
-.book-grid{
-  display:grid;
-  grid-template-columns:
-    repeat(auto-fit,minmax(285px,1fr));
-  gap:22px;
-}
-
-.book-card{
+.stats-box{
   background:white;
   border:1px solid #e2e8f0;
-  border-radius:16px;
-  padding:25px;
-  display:flex;
-  flex-direction:column;
-  min-height:340px;
+  border-radius:18px;
   box-shadow:
-    0 5px 18px rgba(15,23,42,.06);
-  transition:
-    transform .2s ease,
-    box-shadow .2s ease;
+    0 12px 35px rgba(15,23,42,.10);
+  display:grid;
+  grid-template-columns:
+    repeat(3,1fr);
+  overflow:hidden;
 }
 
-.book-card:hover{
-  transform:translateY(-4px);
-  box-shadow:
-    0 12px 30px rgba(15,23,42,.10);
+.stat{
+  text-align:center;
+  padding:23px 12px;
+  border-right:1px solid #e5e7eb;
 }
 
-.book-top{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  margin-bottom:15px;
+.stat:last-child{
+  border-right:none;
 }
 
-.book-number{
-  color:#64748b;
+.stat-number{
+  font-size:27px;
+  font-weight:800;
+  color:#2563eb;
+}
+
+.stat-label{
   font-size:13px;
+  color:#64748b;
+}
+
+
+/* ================= MAIN ================= */
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:65px 20px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+.section-title h2{
+  margin:0 0 8px;
+  font-size:30px;
+}
+
+.section-title p{
+  margin:0;
+  color:#64748b;
+}
+
+
+/* ================= BOOK GRID ================= */
+
+.books{
+  display:grid;
+  grid-template-columns:
+    repeat(auto-fit,minmax(290px,1fr));
+  gap:24px;
+}
+
+.book{
+  background:white;
+  border-radius:18px;
+  border:1px solid #e2e8f0;
+  overflow:hidden;
+  box-shadow:
+    0 7px 25px rgba(15,23,42,.06);
+  transition:
+    transform .25s,
+    box-shadow .25s;
+}
+
+.book:hover{
+  transform:translateY(-7px);
+  box-shadow:
+    0 18px 40px rgba(15,23,42,.12);
+}
+
+.book-color{
+  height:7px;
+  background:linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+  );
+}
+
+.book-body{
+  padding:25px;
+}
+
+.book-meta{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:16px;
+}
+
+.number{
+  font-size:12px;
+  color:#94a3b8;
   font-weight:bold;
 }
 
 .category{
-  background:#eff6ff;
-  color:#1d4ed8;
-  padding:4px 9px;
-  border-radius:20px;
-  font-size:11px;
+  font-size:10px;
   font-weight:bold;
+  color:#1d4ed8;
+  background:#eff6ff;
+  padding:5px 9px;
+  border-radius:20px;
 }
 
-.book-card h3{
-  margin:0 0 5px;
+.book h3{
   font-size:21px;
   line-height:1.4;
+  margin:0 0 5px;
 }
 
 .author{
-  color:#475569;
-  font-size:14px;
-  margin-bottom:13px;
-}
-
-.book-card p{
   color:#64748b;
-  font-size:15px;
-  margin:0;
-  flex-grow:1;
+  font-size:14px;
+  margin-bottom:14px;
 }
 
-.read-btn{
+.book-description{
+  color:#64748b;
+  font-size:14px;
+  min-height:76px;
+}
+
+.read{
   display:block;
   text-align:center;
   text-decoration:none;
   background:#2563eb;
   color:white;
-  padding:11px 15px;
-  border-radius:9px;
-  margin-top:20px;
+  padding:12px;
+  border-radius:10px;
   font-weight:bold;
-  transition:background .2s;
+  margin-top:20px;
+  transition:.2s;
 }
 
-.read-btn:hover{
+.read:hover{
   background:#1d4ed8;
 }
 
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 
 .about{
-  margin-top:55px;
-  background:white;
+  margin-top:65px;
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #f8fbff
+    );
   border:1px solid #e2e8f0;
-  border-radius:16px;
-  padding:32px;
+  border-radius:20px;
+  padding:38px;
+  box-shadow:
+    0 8px 30px rgba(15,23,42,.05);
 }
 
 .about h2{
-  margin-top:0;
-  font-size:27px;
+  margin:0 0 12px;
+  font-size:28px;
 }
 
 .about p{
   color:#475569;
+  max-width:850px;
 }
 
 
-/* BENEFITS */
+/* ================= BENEFITS ================= */
 
 .benefits{
   display:grid;
   grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+    repeat(3,1fr);
   gap:18px;
   margin-top:25px;
 }
@@ -366,42 +391,48 @@ header{
 .benefit{
   background:#f8fafc;
   border:1px solid #e2e8f0;
-  padding:20px;
-  border-radius:12px;
+  padding:22px;
+  border-radius:14px;
+}
+
+.benefit-icon{
+  font-size:28px;
+  margin-bottom:5px;
 }
 
 .benefit h3{
-  margin:0 0 7px;
-  font-size:18px;
+  margin:0 0 5px;
+  font-size:17px;
 }
 
 .benefit p{
   margin:0;
-  font-size:14px;
+  font-size:13px;
 }
 
 
-/* FAQ */
+/* ================= FAQ ================= */
 
 .faq{
-  margin-top:45px;
+  margin-top:65px;
 }
 
 .faq h2{
   text-align:center;
   font-size:28px;
+  margin-bottom:25px;
 }
 
 .faq-item{
   background:white;
   border:1px solid #e2e8f0;
-  border-radius:12px;
+  border-radius:13px;
   padding:20px;
   margin-bottom:12px;
 }
 
 .faq-item h3{
-  margin:0 0 8px;
+  margin:0 0 7px;
   font-size:17px;
 }
 
@@ -412,82 +443,120 @@ header{
 }
 
 
-/* DISCLAIMER */
+/* ================= DISCLAIMER ================= */
 
 .disclaimer{
-  margin-top:35px;
+  margin-top:45px;
   background:#fff7ed;
   border:1px solid #fed7aa;
   color:#7c2d12;
   padding:20px;
-  border-radius:12px;
-  font-size:14px;
-}
-
-
-/* FOOTER */
-
-footer{
-  background:#0b1324;
-  color:#94a3b8;
-  text-align:center;
-  padding:30px 20px;
-  margin-top:20px;
-}
-
-.footer-logo{
-  color:white;
-  font-size:20px;
-  font-weight:bold;
-  margin-bottom:8px;
-}
-
-footer p{
-  margin:4px 0;
+  border-radius:13px;
   font-size:13px;
 }
 
 
-/* MOBILE */
+/* ================= FOOTER ================= */
 
-@media(max-width:650px){
+footer{
+  background:#081225;
+  color:#94a3b8;
+  text-align:center;
+  padding:40px 20px;
+}
 
-  .header-inner{
-    justify-content:center;
-  }
+.footer-logo{
+  font-size:23px;
+  font-weight:800;
+  color:white;
+}
+
+.footer-logo span{
+  color:#60a5fa;
+}
+
+footer p{
+  margin:5px 0;
+  font-size:13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
 
   .nav{
     display:none;
   }
 
-  .hero{
-    padding:48px 18px 55px;
+  .header{
+    justify-content:center;
+  }
+
+  .hero-inner{
+    padding:55px 18px 65px;
   }
 
   .hero h1{
-    font-size:31px;
+    font-size:33px;
+    letter-spacing:-.5px;
   }
 
-  .hero p{
+  .hero-text{
     font-size:15px;
   }
 
-  .container{
-    padding:35px 15px;
+  .stats{
+    margin-top:-25px;
   }
 
-  .section-heading h2{
+  .stats-box{
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+  .stat{
+    padding:17px 5px;
+  }
+
+  .stat-number{
+    font-size:22px;
+  }
+
+  .stat-label{
+    font-size:10px;
+  }
+
+  .container{
+    padding:50px 15px;
+  }
+
+  .section-title h2{
     font-size:25px;
   }
 
-  .book-grid{
+  .books{
     grid-template-columns:1fr;
   }
 
   .about{
-    padding:23px;
+    padding:25px;
   }
 
+  .benefits{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.no-results{
+  display:none;
+  text-align:center;
+  padding:30px;
+  color:#64748b;
 }
 
 </style>
@@ -502,15 +571,15 @@ footer p{
 
 <header>
 
-  <div class="header-inner">
+  <div class="header">
 
-    <a class="logo" href="index.html">
+    <a href="index.html" class="logo">
       Invest<span>Bangla</span>
     </a>
 
     <nav class="nav">
       <a href="#books">বই</a>
-      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="#about">সম্পর্কে</a>
       <a href="#faq">FAQ</a>
     </nav>
 
@@ -526,22 +595,25 @@ footer p{
 
   <div class="hero-inner">
 
-    <div class="badge">
-      বাংলা Financial Education
+    <div class="pill">
+      📚 বাংলা Financial Education
     </div>
 
     <h1>
-      ভালো বই থেকে শিখুন,
-      <span>আর্থিক জ্ঞান বাড়ান</span>
+      বিনিয়োগ শিখুন
+      <span>সহজ বাংলায়</span>
     </h1>
 
-    <p>
-      জনপ্রিয় Investment ও Personal Finance বইয়ের
-      গুরুত্বপূর্ণ ধারণা সহজ বাংলায় পড়ুন।
-      নিজের financial literacy ধীরে ধীরে তৈরি করুন।
+    <p class="hero-text">
+      বিশ্বের জনপ্রিয় Investment ও Personal Finance
+      বইয়ের গুরুত্বপূর্ণ ধারণা সহজ বাংলায় জানুন।
+      নিজের financial knowledge ধীরে ধীরে তৈরি করুন।
     </p>
 
-    <div class="search-wrapper">
+
+    <div class="search">
+
+      <span class="search-icon">🔎</span>
 
       <input
         type="search"
@@ -559,235 +631,335 @@ footer p{
 
 
 
-<!-- BOOKS -->
+<!-- STATS -->
 
-<main class="container" id="books">
+<div class="stats">
 
-  <div class="section-heading">
+  <div class="stats-box">
 
-    <h2>জনপ্রিয় বইয়ের বাংলা সারাংশ</h2>
+    <div class="stat">
 
-    <p>
-      নির্বাচিত বই থেকে গুরুত্বপূর্ণ ধারণাগুলো সহজভাবে জানুন
-    </p>
+      <div class="stat-number">
+        ৫
+      </div>
+
+      <div class="stat-label">
+        বইয়ের সারাংশ
+      </div>
+
+    </div>
+
+
+    <div class="stat">
+
+      <div class="stat-number">
+        বাংলা
+      </div>
+
+      <div class="stat-label">
+        সহজ ভাষা
+      </div>
+
+    </div>
+
+
+    <div class="stat">
+
+      <div class="stat-number">
+        ১০০%
+      </div>
+
+      <div class="stat-label">
+        শিক্ষামূলক
+      </div>
+
+    </div>
 
   </div>
 
+</div>
 
-  <div class="book-grid" id="bookGrid">
 
 
-    <!-- BOOK 1 -->
+<!-- MAIN -->
 
-    <article
-      class="book-card"
-      data-search="psychology of money morgan housel মর্গান হাউজেল">
+<main class="container">
 
-      <div class="book-top">
 
-        <span class="book-number">
-          বই ১
-        </span>
+  <!-- BOOK SECTION -->
 
-        <span class="category">
-          PERSONAL FINANCE
-        </span>
+  <section id="books">
 
-      </div>
+    <div class="section-title">
 
-      <h3>
-        The Psychology of Money
-      </h3>
-
-      <div class="author">
-        Morgan Housel
-      </div>
+      <h2>
+        📚 জনপ্রিয় বই
+      </h2>
 
       <p>
-        টাকা, সম্পদ, ঝুঁকি, লোভ, ভয় এবং মানুষের
-        financial behavior সম্পর্কে গুরুত্বপূর্ণ শিক্ষা।
+        নির্বাচিত বই থেকে গুরুত্বপূর্ণ শিক্ষা পড়ুন
       </p>
 
-      <a
-        class="read-btn"
-        href="psychology-of-money.html">
-        সারাংশ পড়ুন →
-      </a>
-
-    </article>
+    </div>
 
 
-
-    <!-- BOOK 2 -->
-
-    <article
-      class="book-card"
-      data-search="intelligent investor benjamin graham বেঞ্জামিন গ্রাহাম">
-
-      <div class="book-top">
-
-        <span class="book-number">
-          বই ২
-        </span>
-
-        <span class="category">
-          VALUE INVESTING
-        </span>
-
-      </div>
-
-      <h3>
-        The Intelligent Investor
-      </h3>
-
-      <div class="author">
-        Benjamin Graham
-      </div>
-
-      <p>
-        Value Investing, Margin of Safety এবং
-        disciplined investing-এর মৌলিক ধারণা।
-      </p>
-
-      <a
-        class="read-btn"
-        href="intelligent-investor.html">
-        সারাংশ পড়ুন →
-      </a>
-
-    </article>
+    <div class="books" id="bookGrid">
 
 
+      <!-- BOOK 1 -->
 
-    <!-- BOOK 3 -->
+      <article
+        class="book"
+        data-search="psychology of money morgan housel মর্গান হাউজেল">
 
-    <article
-      class="book-card"
-      data-search="one up on wall street peter lynch পিটার লিঞ্চ">
+        <div class="book-color"></div>
 
-      <div class="book-top">
+        <div class="book-body">
 
-        <span class="book-number">
-          বই ৩
-        </span>
+          <div class="book-meta">
 
-        <span class="category">
-          STOCK INVESTING
-        </span>
+            <span class="number">
+              বই ০১
+            </span>
 
-      </div>
+            <span class="category">
+              PERSONAL FINANCE
+            </span>
 
-      <h3>
-        One Up on Wall Street
-      </h3>
+          </div>
 
-      <div class="author">
-        Peter Lynch
-      </div>
+          <h3>
+            The Psychology of Money
+          </h3>
 
-      <p>
-        সাধারণ বিনিয়োগকারী কীভাবে নিজের পর্যবেক্ষণ
-        ও গবেষণার মাধ্যমে কোম্পানি বুঝতে পারে।
-      </p>
+          <div class="author">
+            Morgan Housel
+          </div>
 
-      <a
-        class="read-btn"
-        href="one-up-on-wall-street.html">
-        সারাংশ পড়ুন →
-      </a>
+          <div class="book-description">
+            টাকা, সম্পদ, ঝুঁকি এবং মানুষের financial
+            behavior সম্পর্কে গুরুত্বপূর্ণ শিক্ষা।
+          </div>
 
-    </article>
+          <a
+            href="psychology-of-money.html"
+            class="read">
+            সারাংশ পড়ুন →
+          </a>
+
+        </div>
+
+      </article>
 
 
 
-    <!-- BOOK 4 -->
+      <!-- BOOK 2 -->
 
-    <article
-      class="book-card"
-      data-search="little book common sense investing john bogle জন বোগল">
+      <article
+        class="book"
+        data-search="intelligent investor benjamin graham বেঞ্জামিন গ্রাহাম">
 
-      <div class="book-top">
+        <div class="book-color"></div>
 
-        <span class="book-number">
-          বই ৪
-        </span>
+        <div class="book-body">
 
-        <span class="category">
-          INDEX INVESTING
-        </span>
+          <div class="book-meta">
 
-      </div>
+            <span class="number">
+              বই ০২
+            </span>
 
-      <h3>
-        The Little Book of Common Sense Investing
-      </h3>
+            <span class="category">
+              VALUE INVESTING
+            </span>
 
-      <div class="author">
-        John C. Bogle
-      </div>
+          </div>
 
-      <p>
-        Index Investing, diversification, কম খরচ
-        এবং দীর্ঘমেয়াদি বিনিয়োগের ধারণা।
-      </p>
+          <h3>
+            The Intelligent Investor
+          </h3>
 
-      <a
-        class="read-btn"
-        href="little-book-common-sense-investing.html">
-        সারাংশ পড়ুন →
-      </a>
+          <div class="author">
+            Benjamin Graham
+          </div>
 
-    </article>
+          <div class="book-description">
+            Value Investing, Margin of Safety এবং
+            disciplined investing-এর মৌলিক ধারণা।
+          </div>
 
+          <a
+            href="intelligent-investor.html"
+            class="read">
+            সারাংশ পড়ুন →
+          </a>
 
+        </div>
 
-    <!-- BOOK 5 -->
-
-    <article
-      class="book-card"
-      data-search="rich dad poor dad robert kiyosaki রবার্ট কিয়োসাকি">
-
-      <div class="book-top">
-
-        <span class="book-number">
-          বই ৫
-        </span>
-
-        <span class="category">
-          FINANCIAL EDUCATION
-        </span>
-
-      </div>
-
-      <h3>
-        Rich Dad Poor Dad
-      </h3>
-
-      <div class="author">
-        Robert T. Kiyosaki
-      </div>
-
-      <p>
-        Asset, Liability, Cash Flow এবং financial
-        education-এর গুরুত্বপূর্ণ ধারণা।
-      </p>
-
-      <a
-        class="read-btn"
-        href="rich-dad-poor-dad.html">
-        সারাংশ পড়ুন →
-      </a>
-
-    </article>
+      </article>
 
 
-  </div>
+
+      <!-- BOOK 3 -->
+
+      <article
+        class="book"
+        data-search="one up on wall street peter lynch পিটার লিঞ্চ">
+
+        <div class="book-color"></div>
+
+        <div class="book-body">
+
+          <div class="book-meta">
+
+            <span class="number">
+              বই ০৩
+            </span>
+
+            <span class="category">
+              STOCK INVESTING
+            </span>
+
+          </div>
+
+          <h3>
+            One Up on Wall Street
+          </h3>
+
+          <div class="author">
+            Peter Lynch
+          </div>
+
+          <div class="book-description">
+            সাধারণ বিনিয়োগকারী কীভাবে পর্যবেক্ষণ,
+            গবেষণা এবং ধৈর্যের মাধ্যমে কোম্পানি বুঝতে পারে।
+          </div>
+
+          <a
+            href="one-up-on-wall-street.html"
+            class="read">
+            সারাংশ পড়ুন →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- BOOK 4 -->
+
+      <article
+        class="book"
+        data-search="little book common sense investing john bogle জন বোগল">
+
+        <div class="book-color"></div>
+
+        <div class="book-body">
+
+          <div class="book-meta">
+
+            <span class="number">
+              বই ০৪
+            </span>
+
+            <span class="category">
+              INDEX INVESTING
+            </span>
+
+          </div>
+
+          <h3>
+            The Little Book of Common Sense Investing
+          </h3>
+
+          <div class="author">
+            John C. Bogle
+          </div>
+
+          <div class="book-description">
+            Index Investing, diversification, কম খরচ
+            এবং দীর্ঘমেয়াদি বিনিয়োগের ধারণা।
+          </div>
+
+          <a
+            href="little-book-common-sense-investing.html"
+            class="read">
+            সারাংশ পড়ুন →
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- BOOK 5 -->
+
+      <article
+        class="book"
+        data-search="rich dad poor dad robert kiyosaki রবার্ট কিয়োসাকি">
+
+        <div class="book-color"></div>
+
+        <div class="book-body">
+
+          <div class="book-meta">
+
+            <span class="number">
+              বই ০৫
+            </span>
+
+            <span class="category">
+              FINANCIAL EDUCATION
+            </span>
+
+          </div>
+
+          <h3>
+            Rich Dad Poor Dad
+          </h3>
+
+          <div class="author">
+            Robert T. Kiyosaki
+          </div>
+
+          <div class="book-description">
+            Asset, Liability, Cash Flow এবং financial
+            education-এর গুরুত্বপূর্ণ ধারণা।
+          </div>
+
+          <a
+            href="rich-dad-poor-dad.html"
+            class="read">
+            সারাংশ পড়ুন →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+    <div
+      id="noResults"
+      class="no-results">
+
+      কোনো বই পাওয়া যায়নি।
+
+    </div>
+
+  </section>
 
 
 
   <!-- ABOUT -->
 
-  <section class="about" id="about">
+  <section
+    class="about"
+    id="about">
 
     <h2>
       InvestBangla সম্পর্কে
@@ -801,21 +973,27 @@ footer p{
     </p>
 
     <p>
-      আমাদের লক্ষ্য হলো জটিল financial concepts সহজ করে
-      বোঝানো, যাতে নতুন পাঠকরাও financial literacy তৈরি
-      করতে পারেন এবং বিনিয়োগ সম্পর্কে আরও ভালোভাবে
-      শেখার সুযোগ পান।
+      আমাদের উদ্দেশ্য হলো financial concepts-কে সহজ করে
+      উপস্থাপন করা, যাতে একজন নতুন পাঠকও ধীরে ধীরে
+      নিজের financial literacy বাড়াতে পারেন।
     </p>
 
 
     <div class="benefits">
 
+
       <div class="benefit">
 
-        <h3>📚 সহজ বাংলা</h3>
+        <div class="benefit-icon">
+          📖
+        </div>
+
+        <h3>
+          সহজ বাংলা
+        </h3>
 
         <p>
-          কঠিন financial concepts সহজ ভাষায় বোঝানো।
+          জটিল ধারণা সহজ ভাষায় বোঝার চেষ্টা।
         </p>
 
       </div>
@@ -823,10 +1001,16 @@ footer p{
 
       <div class="benefit">
 
-        <h3>💡 মূল ধারণা</h3>
+        <div class="benefit-icon">
+          💡
+        </div>
+
+        <h3>
+          গুরুত্বপূর্ণ শিক্ষা
+        </h3>
 
         <p>
-          বইয়ের গুরুত্বপূর্ণ শিক্ষাগুলো সংক্ষেপে তুলে ধরা।
+          বইয়ের মূল concepts দ্রুত বুঝতে সাহায্য করে।
         </p>
 
       </div>
@@ -834,10 +1018,16 @@ footer p{
 
       <div class="benefit">
 
-        <h3>🎯 শিক্ষামূলক</h3>
+        <div class="benefit-icon">
+          🎯
+        </div>
+
+        <h3>
+          Financial Literacy
+        </h3>
 
         <p>
-          Financial literacy বাড়ানোর জন্য তৈরি।
+          অর্থ ও বিনিয়োগ সম্পর্কে জ্ঞান বাড়ানোর লক্ষ্য।
         </p>
 
       </div>
@@ -851,10 +1041,12 @@ footer p{
 
   <!-- FAQ -->
 
-  <section class="faq" id="faq">
+  <section
+    class="faq"
+    id="faq">
 
     <h2>
-      সাধারণ প্রশ্ন
+      ❓ সাধারণ প্রশ্ন
     </h2>
 
 
@@ -880,7 +1072,7 @@ footer p{
       </h3>
 
       <p>
-        না। এখানে প্রকাশিত বিষয়বস্তু শুধুমাত্র
+        না। InvestBangla-এর বিষয়বস্তু শুধুমাত্র
         শিক্ষামূলক। এটি ব্যক্তিগত financial advice
         বা নির্দিষ্ট investment recommendation নয়।
       </p>
@@ -896,8 +1088,8 @@ footer p{
 
       <p>
         Investment, Personal Finance, Financial Psychology
-        এবং দীর্ঘমেয়াদি বিনিয়োগ সম্পর্কিত জনপ্রিয়
-        বইয়ের বাংলা সারাংশ এখানে প্রকাশ করা হবে।
+        এবং দীর্ঘমেয়াদি বিনিয়োগ সম্পর্কিত বইয়ের
+        বাংলা সারাংশ এখানে প্রকাশ করা হবে।
       </p>
 
     </div>
@@ -911,7 +1103,7 @@ footer p{
 
   <div class="disclaimer">
 
-    <strong>শিক্ষামূলক সতর্কতা:</strong>
+    <strong>⚠️ শিক্ষামূলক সতর্কতা:</strong><br><br>
 
     InvestBangla-এর সমস্ত বিষয়বস্তু শুধুমাত্র
     শিক্ষামূলক উদ্দেশ্যে প্রকাশ করা হয়।
@@ -936,7 +1128,7 @@ footer p{
 <footer>
 
   <div class="footer-logo">
-    InvestBangla
+    Invest<span>Bangla</span>
   </div>
 
   <p>
@@ -944,7 +1136,7 @@ footer p{
   </p>
 
   <p>
-    © 2026 InvestBangla. All rights reserved.
+    © 2026 InvestBangla
   </p>
 
 </footer>
@@ -962,27 +1154,44 @@ function searchBooks(){
       .toLowerCase()
       .trim();
 
-  const cards =
-    document.querySelectorAll(".book-card");
+  const books =
+    document.querySelectorAll(".book");
 
-  cards.forEach(function(card){
+  let found = 0;
+
+  books.forEach(function(book){
 
     const text =
-      card
+      book
         .getAttribute("data-search")
         .toLowerCase();
 
     if(text.includes(input)){
 
-      card.style.display = "flex";
+      book.style.display = "block";
+      found++;
 
     }else{
 
-      card.style.display = "none";
+      book.style.display = "none";
 
     }
 
   });
+
+
+  const noResults =
+    document.getElementById("noResults");
+
+  if(found === 0){
+
+    noResults.style.display = "block";
+
+  }else{
+
+    noResults.style.display = "none";
+
+  }
 
 }
 
